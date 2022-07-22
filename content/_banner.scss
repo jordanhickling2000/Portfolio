@@ -1,0 +1,33 @@
+#banner {
+    background-image: url(../imgs/cover-img.jpg);
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    .banner-content {
+        text-align: center;
+        margin: auto;
+        width: 60%;
+        color: white;
+    }
+    h1 {
+        position: absolute;
+        top: 35%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+    }
+    p {
+        position: absolute;
+        top: 45%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+    }
+    span {
+        position: absolute;
+        top: 65%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+    }
+}

@@ -1,0 +1,18 @@
+.hamburger-btn {
+    height: 80px;
+    width: 80px;
+    font-size: 20px;
+    background-color: black;
+    border: none;
+    .hamburger-logo {
+        font-size: 40px;
+        color: white;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+    .hamburger-logo:hover {
+        transform: rotate(180deg);
+        transition-duration: 2s;
+    }
+}
