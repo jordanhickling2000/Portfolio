@@ -12,22 +12,31 @@
 }
 #banner h1 {
   position: absolute;
-  top: 35%;
-  left: 60%;
+  top: 40%;
+  left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
+  font-weight: bold;
 }
 #banner p {
   position: absolute;
-  top: 45%;
-  left: 60%;
+  top: 55%;
+  left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
+  font-weight: 300;
 }
 #banner span {
   position: absolute;
-  top: 65%;
-  left: 60%;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+#banner #down-arrow {
+  position: absolute;
+  top: 94%;
+  left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
 }
@@ -48,7 +57,7 @@
 }
 .hamburger-btn .hamburger-logo:hover {
   transform: rotate(180deg);
-  transition-duration: 2s;
+  transition-duration: 1s;
 }
 
 * {
