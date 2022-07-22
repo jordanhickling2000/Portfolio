@@ -1,9 +1,10 @@
 .form {
     display: flex;
+    letter-spacing: normal;
 }
 
 #fname {
-    width: 45%;
+    width: 44%;
     height: 40px;
     margin-right: 20px;
     background-color: #659DBD;
@@ -11,14 +12,14 @@
 }
 
 #sname {
-    width: 45%;
+    width: 44%;
     height: 40px;
     background-color: #659DBD;
     border: 2px solid black;
 }
 
 #email {
-    width: 100%;
+    width: 95%;
     margin-top: 15px;
     height: 40px;
     background-color: #659DBD;
@@ -26,7 +27,7 @@
 }
 
 #subject {
-    width: 100%;
+    width: 95%;
     height: 40px;
     margin-top: 15px;
     background-color: #659DBD;
@@ -34,7 +35,7 @@
 }
 
 #message {
-    width: 100%;
+    width: 95%;
     height: 150px;
     margin-top: 15px;
     background-color: #659DBD;
@@ -43,10 +44,8 @@
 
 .submit-btn {
     margin-top: 15px;
-    width: 25%;
+    width: 30%;
     height: 40px;
-    color: white;
-    background-color: #3d17b0;
     font-weight: bold;
     background-color: #659DBD;
     border: 2px solid black;

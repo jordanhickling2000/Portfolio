@@ -1,3 +1,26 @@
+nav {
+  width: 150px;
+  line-height: 40px;
+  float: left;
+  display: inline;
+}
+nav .intials {
+  text-align: center;
+  color: cyan;
+  font-size: 4rem;
+}
+nav .border-line {
+  border: 1px solid black;
+  margin-bottom: 40px;
+}
+nav a {
+  color: black;
+}
+nav a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 #banner {
   position: relative;
   background-image: url(../imgs/cover-img.jpg);
@@ -42,6 +65,16 @@
   margin: 0;
 }
 
+@media (max-width: 767px) {
+  nav {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .hamburger-btn {
+    display: none;
+  }
+}
 .hamburger-btn {
   height: 80px;
   width: 80px;
@@ -66,7 +99,7 @@
   flex-wrap: wrap;
   margin-top: 20px;
   height: 100%;
-  width: 97%;
+  width: 100%;
   text-align: center;
   line-height: 25px;
 }
@@ -172,13 +205,20 @@
 .get-in-touch .envelope {
   color: red;
 }
+.get-in-touch .envelope-span {
+  font-size: 13px;
+}
+.get-in-touch .phone-span {
+  font-size: 13px;
+}
 
 .form {
   display: flex;
+  letter-spacing: normal;
 }
 
 #fname {
-  width: 45%;
+  width: 44%;
   height: 40px;
   margin-right: 20px;
   background-color: #659DBD;
@@ -186,14 +226,14 @@
 }
 
 #sname {
-  width: 45%;
+  width: 44%;
   height: 40px;
   background-color: #659DBD;
   border: 2px solid black;
 }
 
 #email {
-  width: 100%;
+  width: 95%;
   margin-top: 15px;
   height: 40px;
   background-color: #659DBD;
@@ -201,7 +241,7 @@
 }
 
 #subject {
-  width: 100%;
+  width: 95%;
   height: 40px;
   margin-top: 15px;
   background-color: #659DBD;
@@ -209,7 +249,7 @@
 }
 
 #message {
-  width: 100%;
+  width: 95%;
   height: 150px;
   margin-top: 15px;
   background-color: #659DBD;
@@ -218,10 +258,8 @@
 
 .submit-btn {
   margin-top: 15px;
-  width: 25%;
+  width: 30%;
   height: 40px;
-  color: white;
-  background-color: #3d17b0;
   font-weight: bold;
   background-color: #659DBD;
   border: 2px solid black;
