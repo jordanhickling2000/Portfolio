@@ -1,7 +1,10 @@
 @import "../content/navigation.scss",
         "../content/banner.scss",
         "../utilities/media.scss",
-        "../utilities/buttons";
+        "../utilities/buttons",
+        "../content/cards.scss",
+        "../content/contact.scss",
+        "../content/form.scss";
 
 * {
     box-sizing: border-box;
@@ -20,6 +23,7 @@ body {
     font-family: Poppins, sans-serif;
     margin: 0 !important;
     padding: 0 !important;
+    background-color: #659DBD;
 }
 
 a {
@@ -28,4 +32,11 @@ a {
 
 ul {
     list-style: none;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }

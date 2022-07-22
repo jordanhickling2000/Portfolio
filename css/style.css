@@ -1,4 +1,5 @@
 #banner {
+  position: relative;
   background-image: url(../imgs/cover-img.jpg);
   background-size: cover;
   height: 100vh;
@@ -60,6 +61,172 @@
   transition-duration: 1s;
 }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  height: 100%;
+  width: 97%;
+  text-align: center;
+  line-height: 25px;
+}
+.cards img {
+  height: 160px;
+  width: 100%;
+}
+.cards:hover {
+  cursor: pointer;
+}
+
+.card-one {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  background-color: white;
+}
+.card-one:hover {
+  transform: translateY(-5px);
+  transition-duration: 1s;
+  background-color: black;
+  color: white;
+}
+
+.card-two {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  background-color: white;
+}
+.card-two:hover {
+  transform: translateY(-5px);
+  transition-duration: 1s;
+  background-color: black;
+  color: white;
+}
+
+.card-three {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  background-color: white;
+}
+.card-three:hover {
+  transform: translateY(-5px);
+  transition-duration: 1s;
+  background-color: black;
+  color: white;
+}
+
+.card-four {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  background-color: white;
+}
+.card-four:hover {
+  transform: translateY(-5px);
+  transition-duration: 1s;
+  background-color: black;
+  color: white;
+}
+
+.card-five {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  background-color: white;
+}
+.card-five:hover {
+  transform: translateY(-5px);
+  transition-duration: 1s;
+  background-color: black;
+  color: white;
+}
+
+.card-six {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  background-color: white;
+}
+.card-six:hover {
+  transform: translateY(-5px);
+  transition-duration: 1s;
+  background-color: black;
+  color: white;
+}
+
+.get-in-touch {
+  line-height: 1.2;
+  background-color: #376580;
+  margin-bottom: 15px;
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 15px;
+}
+.get-in-touch .phone {
+  color: #a05dfc;
+  padding-bottom: 10px;
+}
+.get-in-touch .envelope {
+  color: red;
+}
+
+.form {
+  display: flex;
+}
+
+#fname {
+  width: 45%;
+  height: 40px;
+  margin-right: 20px;
+  background-color: #659DBD;
+  border: 2px solid black;
+}
+
+#sname {
+  width: 45%;
+  height: 40px;
+  background-color: #659DBD;
+  border: 2px solid black;
+}
+
+#email {
+  width: 100%;
+  margin-top: 15px;
+  height: 40px;
+  background-color: #659DBD;
+  border: 2px solid black;
+}
+
+#subject {
+  width: 100%;
+  height: 40px;
+  margin-top: 15px;
+  background-color: #659DBD;
+  border: 2px solid black;
+}
+
+#message {
+  width: 100%;
+  height: 150px;
+  margin-top: 15px;
+  background-color: #659DBD;
+  border: 2px solid black;
+}
+
+.submit-btn {
+  margin-top: 15px;
+  width: 25%;
+  height: 40px;
+  color: white;
+  background-color: #3d17b0;
+  font-weight: bold;
+  background-color: #659DBD;
+  border: 2px solid black;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -77,6 +244,7 @@ body {
   font-family: Poppins, sans-serif;
   margin: 0 !important;
   padding: 0 !important;
+  background-color: #659DBD;
 }
 
 a {
@@ -85,4 +253,11 @@ a {
 
 ul {
   list-style: none;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }/*# sourceMappingURL=style.css.map */
