@@ -447,10 +447,10 @@ nav .linkedin:hover {
   color: red;
 }
 .get-in-touch .envelope-span {
-  font-size: 18px;
+  font-size: 15px;
 }
 .get-in-touch .phone-span {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .form {
@@ -465,7 +465,7 @@ nav .linkedin:hover {
   margin-right: 20px;
   background-color: #659DBD;
   border: 2px solid black;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 #sname {
@@ -473,7 +473,7 @@ nav .linkedin:hover {
   height: 40px;
   background-color: #659DBD;
   border: 2px solid black;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 #email {
@@ -482,7 +482,7 @@ nav .linkedin:hover {
   height: 40px;
   background-color: #659DBD;
   border: 2px solid black;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 #subject {
@@ -491,7 +491,7 @@ nav .linkedin:hover {
   margin-top: 15px;
   background-color: #659DBD;
   border: 2px solid black;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 #message {
@@ -500,7 +500,7 @@ nav .linkedin:hover {
   margin-top: 15px;
   background-color: #659DBD;
   border: 2px solid black;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .submit-btn {
@@ -510,7 +510,7 @@ nav .linkedin:hover {
   font-weight: bold;
   background-color: #659DBD;
   border: 2px solid black;
-  font-size: 18px;
+  font-size: 14px;
   transition: color 1s;
   transition: background-color 1s;
 }
