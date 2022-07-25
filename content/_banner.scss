@@ -17,6 +17,7 @@
         transform: translate(-50%, -50%);
         margin: 0;
         font-weight: bold;
+        font-size: 6vw;
     }
     p {
         position: absolute;
@@ -25,6 +26,7 @@
         transform: translate(-50%, -50%);
         margin: 0;
         font-weight: 300;
+        font-size: 3vw;
     }
     span {
         position: absolute;
@@ -32,6 +34,11 @@
         left: 50%;
         transform: translate(-50%, -50%);
         margin: 0;
+        font-size: 20px;
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
     }
     #down-arrow {
         position: absolute;
@@ -39,5 +46,6 @@
         left: 50%;
         transform: translate(-50%, -50%);
         margin: 0;
+        font-size: 20px;
     }
 }

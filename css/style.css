@@ -1,8 +1,13 @@
 nav {
-  width: 150px;
+  position: fixed;
+  width: 25%;
+  height: 100vh;
   line-height: 40px;
   float: left;
   display: inline;
+  background-color: #376580;
+  overflow: hidden;
+  font-weight: bold;
 }
 nav .intials {
   text-align: center;
@@ -15,10 +20,32 @@ nav .border-line {
 }
 nav a {
   color: black;
+  transition: color 1s;
 }
 nav a:hover {
   cursor: pointer;
   text-decoration: underline;
+  color: white;
+}
+nav .social-media {
+  display: flex;
+  flex-wrap: wrap;
+}
+nav .instagram {
+  color: purple;
+  font-size: 4vw;
+  width: 10%;
+}
+nav .instagram:hover {
+  cursor: pointer;
+}
+nav .linkedin {
+  color: blue;
+  font-size: 4vw;
+  width: 10%;
+}
+nav .linkedin:hover {
+  cursor: pointer;
 }
 
 #banner {
@@ -41,6 +68,7 @@ nav a:hover {
   transform: translate(-50%, -50%);
   margin: 0;
   font-weight: bold;
+  font-size: 6vw;
 }
 #banner p {
   position: absolute;
@@ -49,6 +77,7 @@ nav a:hover {
   transform: translate(-50%, -50%);
   margin: 0;
   font-weight: 300;
+  font-size: 3vw;
 }
 #banner span {
   position: absolute;
@@ -56,6 +85,11 @@ nav a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
+  font-size: 20px;
+}
+#banner span:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 #banner #down-arrow {
   position: absolute;
@@ -63,8 +97,32 @@ nav a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
+  font-size: 20px;
 }
 
+@media (min-width: 576px) {
+  .card-one {
+    max-width: 49%;
+    margin-right: 10px;
+  }
+  .card-two {
+    max-width: 49%;
+  }
+  .card-three {
+    max-width: 49%;
+    margin-right: 10px;
+  }
+  .card-four {
+    max-width: 49%;
+  }
+  .card-five {
+    max-width: 49%;
+    margin-right: 10px;
+  }
+  .card-six {
+    max-width: 49%;
+  }
+}
 @media (max-width: 767px) {
   nav {
     display: none;
@@ -73,6 +131,179 @@ nav a:hover {
 @media (min-width: 768px) {
   .hamburger-btn {
     display: none;
+  }
+  #banner {
+    margin-left: 25%;
+  }
+  .cards {
+    margin-left: 25%;
+  }
+  .card-one {
+    max-width: 75%;
+  }
+  .card-two {
+    max-width: 75%;
+  }
+  .card-three {
+    max-width: 75%;
+  }
+  .card-four {
+    max-width: 75%;
+  }
+  .card-five {
+    max-width: 75%;
+  }
+  .card-six {
+    max-width: 75%;
+  }
+  .get-in-touch {
+    margin-left: 25%;
+  }
+  nav {
+    line-height: 60px;
+  }
+  .hide {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  nav {
+    font-size: 20px;
+  }
+  .card-one {
+    max-width: 37%;
+    margin-right: 10px;
+  }
+  .card-two {
+    max-width: 37%;
+  }
+  .card-three {
+    max-width: 37%;
+    margin-right: 10px;
+  }
+  .card-four {
+    max-width: 37%;
+  }
+  .card-five {
+    max-width: 37%;
+    margin-right: 10px;
+  }
+  .card-six {
+    max-width: 37%;
+  }
+  .hide {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  #banner {
+    height: 75vh;
+  }
+  .card-one {
+    max-width: 24.5%;
+    margin-right: 10px;
+  }
+  .card-two {
+    max-width: 24.5%;
+    margin-right: 10px;
+  }
+  .card-three {
+    max-width: 24.5%;
+  }
+  .card-four {
+    max-width: 24.5%;
+    margin-right: 10px;
+  }
+  .card-five {
+    max-width: 24.5%;
+    margin-right: 10px;
+  }
+  .card-six {
+    max-width: 24.5%;
+  }
+}
+@media (min-width: 992px) {
+  #banner h1 {
+    font-size: 40px;
+  }
+  #banner p {
+    top: 62%;
+    font-size: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  nav {
+    width: 18%;
+  }
+  #banner {
+    margin-left: 18%;
+    height: 50vh;
+  }
+  .cards {
+    margin-left: 18%;
+  }
+  .get-in-touch {
+    margin-left: 18%;
+  }
+  .card-one {
+    margin-left: 24px;
+    max-width: 26.1%;
+    margin-right: 10px;
+  }
+  .card-two {
+    max-width: 26.1%;
+    margin-right: 10px;
+  }
+  .card-three {
+    max-width: 26.1%;
+  }
+  .card-four {
+    margin-left: 24px;
+    max-width: 26.1%;
+    margin-right: 10px;
+  }
+  .card-five {
+    max-width: 26.1%;
+    margin-right: 10px;
+  }
+  .card-six {
+    max-width: 26.1%;
+  }
+}
+@media (min-width: 1500px) {
+  nav {
+    width: 15%;
+  }
+  #banner {
+    margin-left: 15%;
+  }
+  .cards {
+    margin-left: 15%;
+  }
+  .get-in-touch {
+    margin-left: 15%;
+  }
+  .card-one {
+    max-width: 27.4%;
+    margin-right: 20px;
+  }
+  .card-two {
+    max-width: 27.4%;
+    margin-right: 20px;
+  }
+  .card-three {
+    max-width: 27.4%;
+  }
+  .card-four {
+    max-width: 27.4%;
+    margin-right: 20px;
+  }
+  .card-five {
+    max-width: 27.4%;
+    margin-right: 20px;
+  }
+  .card-six {
+    max-width: 27.4%;
   }
 }
 .hamburger-btn {
@@ -97,14 +328,14 @@ nav a:hover {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 60px;
   height: 100%;
   width: 100%;
   text-align: center;
   line-height: 25px;
 }
 .cards img {
-  height: 160px;
+  height: 200px;
   width: 100%;
 }
 .cards:hover {
@@ -195,7 +426,7 @@ nav a:hover {
   margin-bottom: 15px;
   color: black;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 20px;
   padding: 15px;
 }
 .get-in-touch .phone {
@@ -206,10 +437,10 @@ nav a:hover {
   color: red;
 }
 .get-in-touch .envelope-span {
-  font-size: 13px;
+  font-size: 18px;
 }
 .get-in-touch .phone-span {
-  font-size: 13px;
+  font-size: 18px;
 }
 
 .form {
@@ -223,6 +454,7 @@ nav a:hover {
   margin-right: 20px;
   background-color: #659DBD;
   border: 2px solid black;
+  font-size: 18px;
 }
 
 #sname {
@@ -230,6 +462,7 @@ nav a:hover {
   height: 40px;
   background-color: #659DBD;
   border: 2px solid black;
+  font-size: 18px;
 }
 
 #email {
@@ -238,6 +471,7 @@ nav a:hover {
   height: 40px;
   background-color: #659DBD;
   border: 2px solid black;
+  font-size: 18px;
 }
 
 #subject {
@@ -246,6 +480,7 @@ nav a:hover {
   margin-top: 15px;
   background-color: #659DBD;
   border: 2px solid black;
+  font-size: 18px;
 }
 
 #message {
@@ -254,6 +489,7 @@ nav a:hover {
   margin-top: 15px;
   background-color: #659DBD;
   border: 2px solid black;
+  font-size: 18px;
 }
 
 .submit-btn {
@@ -263,6 +499,14 @@ nav a:hover {
   font-weight: bold;
   background-color: #659DBD;
   border: 2px solid black;
+  font-size: 18px;
+  transition: color 1s;
+  transition: background-color 1s;
+}
+.submit-btn:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
 }
 
 * {

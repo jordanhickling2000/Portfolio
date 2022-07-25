@@ -1,4 +1,25 @@
-@media (min-width: 576px) {
+@media (min-width: 576px) { // S size
+    .card-one {
+        max-width: 49%;
+        margin-right: 10px;
+    }
+    .card-two {
+        max-width: 49%;
+    }
+    .card-three {
+        max-width: 49%;
+        margin-right: 10px;
+    }
+    .card-four {
+        max-width: 49%;
+    }
+    .card-five {
+        max-width: 49%;
+        margin-right: 10px;
+    }
+    .card-six {
+        max-width: 49%;
+    }
 }
 
 @media (max-width: 767px) {
@@ -10,5 +31,185 @@
 @media (min-width: 768px) {
     .hamburger-btn {
         display: none;
+    }
+    #banner {
+        margin-left:25%;
+    }
+    .cards {
+        margin-left:25%;
+    }
+    .card-one {
+        max-width: 75%;
+    }
+    .card-two {
+        max-width: 75%;
+    }
+    .card-three {
+        max-width: 75%;
+    }
+    .card-four {
+        max-width: 75%;
+    }
+    .card-five {
+        max-width: 75%;
+    }
+    .card-six {
+        max-width: 75%;
+    }
+    .get-in-touch {
+        margin-left:25%;
+    }
+    nav {
+        line-height: 60px;
+    }
+    .hide {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    nav {
+        font-size: 20px;
+    }
+    .card-one {
+        max-width: 37%;
+        margin-right: 10px;
+    }
+    .card-two {
+        max-width: 37%;
+    }
+    .card-three {
+        max-width: 37%;
+        margin-right: 10px;
+    }
+    .card-four {
+        max-width: 37%;
+    }
+    .card-five {
+        max-width: 37%;
+        margin-right: 10px;
+    }
+    .card-six {
+        max-width: 37%;
+    }
+    .hide {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    #banner {
+        height: 75vh;
+    }
+    .card-one {
+        max-width: 24.5%;
+        margin-right: 10px;
+    }
+    .card-two {
+        max-width: 24.5%;
+        margin-right: 10px;
+    }
+    .card-three {
+        max-width: 24.5%;
+    }
+    .card-four {
+        max-width: 24.5%;
+        margin-right: 10px;
+    }
+    .card-five {
+        max-width: 24.5%;
+        margin-right: 10px;
+    }
+    .card-six {
+        max-width: 24.5%;
+    }
+}
+
+@media (min-width: 992px) {
+    #banner {
+        h1 {
+            font-size: 40px;
+        }
+        p {
+            top:62%;
+            font-size: 30px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    nav {
+        width: 18%;
+    }
+    #banner {
+        margin-left: 18%;
+        height: 50vh;
+    }
+    .cards {
+        margin-left: 18%;
+    }
+    .get-in-touch {
+        margin-left: 18%;
+    }
+    .card-one {
+        margin-left: 24px;
+        max-width: 26.1%;
+        margin-right: 10px;
+    }
+    .card-two {
+        max-width: 26.1%;
+        margin-right: 10px;
+    }
+    .card-three {
+        max-width: 26.1%;
+    }
+    .card-four {
+        margin-left: 24px;
+        max-width: 26.1%;
+        margin-right: 10px;
+    }
+    .card-five {
+        max-width: 26.1%;
+        margin-right: 10px;
+    }
+    .card-six {
+        max-width: 26.1%;
+    }
+}
+
+@media (min-width: 1500px) {
+    nav {
+        width: 15%;
+    }
+    #banner {
+        margin-left: 15%;
+    }
+    .cards {
+        margin-left: 15%;
+    }
+    .get-in-touch {
+        margin-left: 15%;
+    }
+    .card-one {
+        max-width: 27.4%;
+        margin-right: 20px;
+    }
+    .card-two {
+        max-width: 27.4%;
+        margin-right: 20px;
+    }
+    .card-three {
+        max-width: 27.4%;
+    }
+    .card-four {
+        max-width: 27.4%;
+        margin-right: 20px;
+    }
+    .card-five {
+        max-width: 27.4%;
+        margin-right: 20px;
+    }
+    .card-six {
+        max-width: 27.4%;
     }
 }

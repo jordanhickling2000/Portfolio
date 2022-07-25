@@ -1,13 +1,13 @@
 .cards {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 60px;
     height: 100%;
     width: 100%;  
     text-align: center;
     line-height: 25px;
     img {
-        height: 160px;
+        height: 200px;
         width: 100%;
     } 
     &:hover {

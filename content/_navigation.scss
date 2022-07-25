@@ -1,8 +1,13 @@
 nav {    
-    width: 150px;
+    position: fixed;
+    width: 25%;
+    height: 100vh;
     line-height: 40px;
     float: left;
     display: inline;
+    background-color: #376580;
+    overflow: hidden;
+    font-weight: bold;
     .intials {
         text-align: center;
         color: cyan;
@@ -14,9 +19,31 @@ nav {
     }
     a {
         color: black;
+        transition: color 1s;
     }
     a:hover {
         cursor: pointer;
         text-decoration: underline; 
+        color: white;
+    }
+    .social-media {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .instagram {
+        color: purple;
+        font-size: 4vw;
+        width: 10%;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .linkedin {
+        color: blue;
+        font-size: 4vw;
+        width: 10%;
+        &:hover {
+            cursor: pointer;
+        }
     }
   }
