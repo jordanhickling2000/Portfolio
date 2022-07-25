@@ -520,6 +520,50 @@ nav .linkedin:hover {
   color: white;
 }
 
+.about-me {
+  text-align: center;
+  margin-top: 30px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.avatar {
+  height: 80px;
+}
+
+.about-section-1 {
+  padding: 5px;
+  color: white;
+  background-color: #333645;
+}
+.about-section-1 h2 {
+  font-size: 20px;
+}
+.about-section-1 p {
+  font-size: 15px;
+}
+.about-section-1 a {
+  text-decoration: none;
+  color: green;
+}
+.about-section-1 a:hover {
+  cursor: pointer;
+}
+
+.hobbies {
+  border-top: 2px solid black;
+  padding: 5px;
+  color: white;
+  background-color: #333645;
+}
+.hobbies a {
+  text-decoration: none;
+  color: yellow;
+}
+.hobbies a:hover {
+  cursor: pointer;
+}
+
 * {
   box-sizing: border-box;
 }
