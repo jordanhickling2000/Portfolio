@@ -281,29 +281,30 @@ nav .linkedin:hover {
     margin-left: 15%;
   }
   .get-in-touch {
+    display: flex;
     margin-left: 15%;
   }
   .card-one {
-    max-width: 27.4%;
+    max-width: 26.5%;
     margin-right: 20px;
   }
   .card-two {
-    max-width: 27.4%;
+    max-width: 26.5%;
     margin-right: 20px;
   }
   .card-three {
-    max-width: 27.4%;
+    max-width: 26.5%;
   }
   .card-four {
-    max-width: 27.4%;
+    max-width: 26.5%;
     margin-right: 20px;
   }
   .card-five {
-    max-width: 27.4%;
+    max-width: 26.5%;
     margin-right: 20px;
   }
   .card-six {
-    max-width: 27.4%;
+    max-width: 26.5%;
   }
 }
 .hamburger-btn {
