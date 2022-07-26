@@ -1,0 +1,107 @@
+
+#scs-heading {
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    color: #333645;
+}
+
+.scs-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #5392b5;
+    padding-top: 10px;
+    ul {
+        text-align:center;
+    }
+    li {
+        list-style: none;
+        text-align: center;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    a {
+        text-decoration: none;
+        transition: color 1s;
+        color: black;
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline; 
+            color: white;
+        }
+    }   
+}
+
+.all-scs-info {
+    #introduction {
+        padding: 10px;
+        color: #FFFDD0;
+        background-color: #333645;
+        padding-bottom: 50px;
+        h2 {
+            font-size: 25px;
+            color: #C4A484;
+            margin-left: 5px;
+            margin-right: 5px;  
+        }
+        p {
+            font-size: 20px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+    #treehouse {
+        padding: 10px;
+        color: #FFFDD0;
+        background-color: #333645;
+        border: 1px solid black;
+        padding-bottom: 50px;
+        h2 {
+            font-size: 25px;
+            color: #C4A484;
+            margin-left: 5px;
+            margin-right: 5px;  
+        }
+        p {
+            font-size: 20px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        a {
+            text-decoration: none;
+            color: green;
+            transition: color 2s;
+            margin-right: 5px;
+            margin-left: 5px;
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+                color: white;
+            }
+        }
+    }
+    #netmatters {
+        padding: 10px;
+        color: #FFFDD0;
+        background-color: #333645;
+        justify-content: center;
+        border: 1px solid black;
+        padding-bottom: 50px;
+        h2 {
+            font-size: 25px;
+            color: #C4A484;
+            margin-left: 5px;
+            margin-right: 5px;  
+        }
+        p {
+            font-size: 20px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        ol {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+    }
+}

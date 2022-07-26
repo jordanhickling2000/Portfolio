@@ -1,0 +1,24 @@
+
+#coding-header {
+    justify-content: center;
+    font-size: 25px;
+    h1 {
+        text-align: center;
+        color: red;
+    }
+    p {
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    a {
+        text-decoration: none;
+        color: lime;
+        transition: color 2s;
+        &:hover {
+            cursor: pointer;
+            color: black;
+            text-decoration: underline;
+        }
+    }
+}

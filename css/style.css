@@ -105,6 +105,18 @@ nav .top-left a {
 }
 
 @media (min-width: 576px) {
+  .about-me-content li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 0;
+    padding-top: 15px;
+  }
+  .scs-navigation li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 0;
+    padding-top: 15px;
+  }
   .card-one {
     max-width: 49%;
     margin-right: 10px;
@@ -135,6 +147,18 @@ nav .top-left a {
 @media (min-width: 768px) {
   .hamburger-btn {
     display: none;
+  }
+  .all-scs-info {
+    margin-left: 25%;
+  }
+  .scs-navigation {
+    margin-left: 25%;
+  }
+  #scs-heading {
+    margin-left: 25%;
+  }
+  #coding-header {
+    margin-left: 25%;
   }
   .about-me {
     margin-left: 25%;
@@ -222,6 +246,18 @@ nav .top-left a {
   nav {
     max-width: 20%;
   }
+  .all-scs-info {
+    margin-left: 20%;
+  }
+  .scs-navigation {
+    margin-left: 20%;
+  }
+  #scs-heading {
+    margin-left: 20%;
+  }
+  #coding-header {
+    margin-left: 20%;
+  }
   .about-me {
     margin-left: 20%;
   }
@@ -267,6 +303,12 @@ nav .top-left a {
   }
 }
 @media (min-width: 1500px) {
+  .all-scs-info .scs-navigation #scs-heading {
+    margin-left: 20%;
+  }
+  #coding-header {
+    margin-left: 20%;
+  }
   .about-me-content {
     margin-left: 20%;
   }
@@ -520,13 +562,14 @@ nav .top-left a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: #5392b5;
+  padding-top: 10px;
 }
 .about-me-content li {
   list-style: none;
-  display: inline-block;
   text-align: center;
   margin-right: 20px;
-  margin-left: 20px;
+  margin-bottom: 20px;
 }
 .about-me-content a {
   text-decoration: none;
@@ -606,6 +649,135 @@ nav .top-left a {
 }
 #career-path p {
   font-size: 15px;
+}
+
+#coding-header {
+  justify-content: center;
+  font-size: 25px;
+}
+#coding-header h1 {
+  text-align: center;
+  color: red;
+}
+#coding-header p {
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#coding-header a {
+  text-decoration: none;
+  color: lime;
+  transition: color 2s;
+}
+#coding-header a:hover {
+  cursor: pointer;
+  color: black;
+  text-decoration: underline;
+}
+
+#scs-heading {
+  text-align: center;
+  font-weight: bold;
+  justify-content: center;
+  color: #333645;
+}
+
+.scs-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #5392b5;
+  padding-top: 10px;
+}
+.scs-navigation ul {
+  text-align: center;
+}
+.scs-navigation li {
+  list-style: none;
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.scs-navigation a {
+  text-decoration: none;
+  transition: color 1s;
+  color: black;
+}
+.scs-navigation a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
+}
+
+.all-scs-info #introduction {
+  padding: 10px;
+  color: #FFFDD0;
+  background-color: #333645;
+  padding-bottom: 50px;
+}
+.all-scs-info #introduction h2 {
+  font-size: 25px;
+  color: #C4A484;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.all-scs-info #introduction p {
+  font-size: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.all-scs-info #treehouse {
+  padding: 10px;
+  color: #FFFDD0;
+  background-color: #333645;
+  border: 1px solid black;
+  padding-bottom: 50px;
+}
+.all-scs-info #treehouse h2 {
+  font-size: 25px;
+  color: #C4A484;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.all-scs-info #treehouse p {
+  font-size: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.all-scs-info #treehouse a {
+  text-decoration: none;
+  color: green;
+  transition: color 2s;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.all-scs-info #treehouse a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
+}
+.all-scs-info #netmatters {
+  padding: 10px;
+  color: #FFFDD0;
+  background-color: #333645;
+  justify-content: center;
+  border: 1px solid black;
+  padding-bottom: 50px;
+}
+.all-scs-info #netmatters h2 {
+  font-size: 25px;
+  color: #C4A484;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.all-scs-info #netmatters p {
+  font-size: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.all-scs-info #netmatters ol {
+  font-size: 20px;
+  margin-right: 5px;
 }
 
 * {

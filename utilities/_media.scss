@@ -1,4 +1,20 @@
 @media (min-width: 576px) { // S size
+    .about-me-content {
+        li {
+            display: inline-block;
+            margin-left: 10px;
+            margin-bottom: 0;
+            padding-top: 15px
+        }
+    }
+    .scs-navigation {
+        li {
+            display: inline-block;
+            margin-left: 10px;
+            margin-bottom: 0;
+            padding-top: 15px
+        }
+    }
     .card-one {
         max-width: 49%;
         margin-right: 10px;
@@ -31,6 +47,18 @@
 @media (min-width: 768px) {
     .hamburger-btn {
         display: none;
+    }
+    .all-scs-info  {
+        margin-left: 25%;
+    }
+    .scs-navigation {
+        margin-left: 25%;
+    }
+    #scs-heading {
+        margin-left: 25%;
+    }
+    #coding-header {
+        margin-left: 25%;
     }
     .about-me {
         margin-left: 25%;
@@ -120,6 +148,18 @@
     nav {
         max-width: 20%;
     }
+    .all-scs-info {
+        margin-left: 20%;
+    }
+    .scs-navigation {
+        margin-left: 20%;
+    }
+    #scs-heading {
+        margin-left: 20%;
+    }
+    #coding-header {
+        margin-left: 20%;
+    }
     .about-me {
         margin-left: 20%;
     }
@@ -168,7 +208,12 @@
 }
 
 @media (min-width: 1500px) {
-    
+    .all-scs-info .scs-navigation #scs-heading{
+        margin-left: 20%;
+    }
+    #coding-header {
+        margin-left: 20%;
+    }
     .about-me-content {
         margin-left: 20%;
     }
