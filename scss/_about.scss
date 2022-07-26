@@ -1,20 +1,47 @@
+
 .about-me {
     text-align: center;
     margin-top: 30px;
     text-decoration: underline;
     font-weight: bold;
+    justify-content: center;
 }
 
 .avatar {
     height: 80px;
 }
 
-.about-section-1 {
+.about-me-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+        list-style: none;
+        display: inline-block;
+        text-align: center;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    a {
+        text-decoration: none;
+        transition: color 1s;
+        color: black;
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline; 
+            color: white;
+        }
+    }   
+}
+
+
+#about-section-1 {
     padding: 5px;
     color: white;
     background-color: #333645;
     h2 {
         font-size: 20px;
+        color: #C4A484;
     }
     p {
         font-size: 15px;
@@ -28,16 +55,51 @@
     }
 }
 
-.hobbies {
+#hobbies {
     border-top: 2px solid black;
     padding: 5px;
     color: white;
     background-color: #333645;
+    h2 {
+        font-size: 20px;
+        color: #C4A484;
+    }
+    p {
+        font-size: 15px;
+    }
     a {
     text-decoration: none;
         color: yellow;
         &:hover {
             cursor: pointer;
         }
+    }
+}
+
+#education {
+    border-top: 2px solid black;
+    padding: 5px;
+    color: white;
+    background-color: #333645;
+    h2 {
+        font-size: 20px;
+        color: #C4A484;
+    }
+    p {
+        font-size: 15px;
+    }
+}
+
+#career-path {
+    border-top: 2px solid black;
+    padding: 5px;
+    color: white;
+    background-color: #333645;
+    h2 {
+        font-size: 20px;
+        color: #C4A484;
+    }
+    p {
+        font-size: 15px;
     }
 }

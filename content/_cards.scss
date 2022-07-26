@@ -3,12 +3,13 @@
     flex-wrap: wrap;
     margin-top: 60px;
     height: 100%;
-    width: 100%;  
+    width: 98%;  
     text-align: center;
     line-height: 25px;
     img {
         height: 200px;
         width: 100%;
+        object-fit: cover;
     } 
     &:hover {
         cursor: pointer;

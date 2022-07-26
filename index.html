@@ -10,7 +10,7 @@
     <body>
         <nav>
             <div class="main-nav">
-                <h1 class="intials">JH</h1>
+                <a href="index.html"><h1 class="intials">JH</h1></a>
                 <div class="border-line">
                 </div>
                 <div>
@@ -19,7 +19,7 @@
                         <li><a href="">My Portfolio</a></li>
                         <li><a href="coding.html">Coding Examples</a></li>
                         <li><a href="scs.html">SCS Software</a></li>
-                        <li><a href="">Contact Me</a></li>
+                        <li><a href="#link">Contact Me</a></li>
                     </ul>
                     </div>
                     <div class="social media">
@@ -93,6 +93,7 @@
         </div>
         <div class="container">
             <div class="get-in-touch">
+                <div id="link"></div>
                     <div class="contact-text">
                         <h2>Get In Touch</h2>
                         <p>If you would like to know more about me, any projects I am working on or have any comments/questions on my work please contact below:</p>
@@ -103,8 +104,10 @@
                     </div>
                         <div class="form">
                             <form>
-                                <input type="text" id="fname" name="fname" placeholder="First Name:">
-                                <input type="text" id="sname" name="sname" placeholder="Second Name:">
+                                <div class="name">
+                                    <input type="text" id="fname" name="fname" placeholder="First Name:">
+                                    <input type="text" id="sname" name="sname" placeholder="Second Name:">
+                                </div>
                                 <input type="email" id="email" name="email" value="" placeholder="Email:">
                                 <input type="text" id="subject" name="subject" placeholder="Subject:">
                                 <textarea type="text" id="message" name="message" placeholder="Message:" maxlength="480"></textarea>

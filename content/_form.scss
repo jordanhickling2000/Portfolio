@@ -4,8 +4,13 @@
     margin-left: 20px;
 }
 
+.name {
+    display: flex;
+    width: 96%;
+}
+
 #fname {
-    width: 44%;
+    width: 90%;
     height: 40px;
     margin-right: 20px;
     background-color: #659DBD;
@@ -14,7 +19,7 @@
 }
 
 #sname {
-    width: 44%;
+    width: 90%;
     height: 40px;
     background-color: #659DBD;
     border: 2px solid black;
@@ -22,7 +27,7 @@
 }
 
 #email {
-    width: 95%;
+    width: 96%;
     margin-top: 15px;
     height: 40px;
     background-color: #659DBD;
@@ -31,7 +36,7 @@
 }
 
 #subject {
-    width: 95%;
+    width: 96%;
     height: 40px;
     margin-top: 15px;
     background-color: #659DBD;
@@ -40,7 +45,7 @@
 }
 
 #message {
-    width: 95%;
+    width: 96%;
     height: 150px;
     margin-top: 15px;
     background-color: #659DBD;

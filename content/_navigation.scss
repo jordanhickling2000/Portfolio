@@ -1,6 +1,6 @@
 nav {    
     position: fixed;
-    width: 25%;
+    width:25vw;
     height: 100vh;
     line-height: 40px;
     float: left;
@@ -45,5 +45,9 @@ nav {
         &:hover {
             cursor: pointer;
         }
+    }
+    .top-left a {
+        text-decoration: none;
+        color: aqua;
     }
   }
