@@ -26,28 +26,33 @@ nav {
         text-decoration: underline; 
         color: white;
     }
-    .social-media {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .instagram {
-        color: purple;
-        font-size: 4vw;
-        width: 10%;
-        &:hover {
-            cursor: pointer;
-        }
-    }
-    .linkedin {
-        color: blue;
-        font-size: 4vw;
-        width: 10%;
-        &:hover {
-            cursor: pointer;
-        }
-    }
     .top-left a {
         text-decoration: none;
         color: aqua;
     }
   }
+
+
+  .social-media {
+    float: left;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ 
+.instagram {
+    color: purple;
+    font-size: 2.5vw;
+    margin-right: 20px;
+    margin-left: 40px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.linkedin {
+    color: blue;
+    font-size: 2.5vw;
+    &:hover {
+        cursor: pointer;
+    }
+}

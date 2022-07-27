@@ -27,29 +27,33 @@ nav a:hover {
   text-decoration: underline;
   color: white;
 }
-nav .social-media {
-  display: flex;
-  flex-wrap: wrap;
-}
-nav .instagram {
-  color: purple;
-  font-size: 4vw;
-  width: 10%;
-}
-nav .instagram:hover {
-  cursor: pointer;
-}
-nav .linkedin {
-  color: blue;
-  font-size: 4vw;
-  width: 10%;
-}
-nav .linkedin:hover {
-  cursor: pointer;
-}
 nav .top-left a {
   text-decoration: none;
   color: aqua;
+}
+
+.social-media {
+  float: left;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.instagram {
+  color: purple;
+  font-size: 2.5vw;
+  margin-right: 20px;
+  margin-left: 40px;
+}
+.instagram:hover {
+  cursor: pointer;
+}
+
+.linkedin {
+  color: blue;
+  font-size: 2.5vw;
+}
+.linkedin:hover {
+  cursor: pointer;
 }
 
 #banner {
@@ -63,7 +67,7 @@ nav .top-left a {
   text-align: center;
   margin: auto;
   width: 60%;
-  color: white;
+  color: aqua;
 }
 #banner h1 {
   position: absolute;
@@ -172,6 +176,9 @@ nav .top-left a {
   #banner {
     margin-left: 25%;
   }
+  .project-heading {
+    margin-left: 25%;
+  }
   .cards {
     margin-left: 25%;
   }
@@ -252,6 +259,9 @@ nav .top-left a {
   .scs-navigation {
     margin-left: 20%;
   }
+  .scs-navigation ul {
+    display: none;
+  }
   #scs-heading {
     margin-left: 20%;
   }
@@ -259,6 +269,9 @@ nav .top-left a {
     margin-left: 20%;
   }
   .about-me {
+    margin-left: 20%;
+  }
+  .about-me-content {
     margin-left: 20%;
   }
   .about-me-content ul {
@@ -270,6 +283,9 @@ nav .top-left a {
   #banner {
     margin-left: 20%;
     height: 50vh;
+  }
+  .project-heading {
+    margin-left: 20%;
   }
   .cards {
     margin-left: 20%;
@@ -303,27 +319,39 @@ nav .top-left a {
   }
 }
 @media (min-width: 1500px) {
-  .all-scs-info .scs-navigation #scs-heading {
-    margin-left: 20%;
+  nav {
+    max-width: 15%;
+  }
+  .all-scs-info {
+    margin-left: 15%;
+  }
+  .scs-navigation {
+    margin-left: 15%;
+  }
+  #scs-heading {
+    margin-left: 15%;
   }
   #coding-header {
-    margin-left: 20%;
+    margin-left: 15%;
   }
   .about-me-content {
-    margin-left: 20%;
+    margin-left: 15%;
   }
   .all-about-me {
-    margin-left: 20%;
+    margin-left: 15%;
   }
   #banner {
-    margin-left: 20%;
+    margin-left: 15%;
+  }
+  .project-heading {
+    margin-left: 15%;
   }
   .cards {
-    margin-left: 20%;
+    margin-left: 15%;
   }
   .get-in-touch {
     display: flex;
-    margin-left: 20%;
+    margin-left: 15%;
   }
   .form {
     width: 50%;
@@ -354,10 +382,17 @@ nav .top-left a {
   transition-duration: 1s;
 }
 
+.project-heading {
+  padding-top: 10px;
+}
+.project-heading h2 {
+  font-size: 30px;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 60px;
+  margin-top: 40px;
   height: 100%;
   width: 98%;
   text-align: center;
@@ -383,6 +418,14 @@ nav .top-left a {
   transform: translateY(-5px);
   transition-duration: 1s;
   background-color: black;
+  color: white;
+}
+.card-one a {
+  text-decoration: none;
+  color: black;
+  transition: color 1.5s;
+}
+.card-one a:hover {
   color: white;
 }
 
@@ -463,15 +506,19 @@ nav .top-left a {
 .get-in-touch .phone {
   color: #a05dfc;
   padding-bottom: 10px;
+  margin-right: 5px;
 }
 .get-in-touch .envelope {
   color: red;
+  margin-right: 5px;
 }
 .get-in-touch .envelope-span {
-  font-size: 15px;
+  font-size: 13px;
+  margin-left: 5px;
 }
 .get-in-touch .phone-span {
-  font-size: 15px;
+  font-size: 13px;
+  margin-left: 5px;
 }
 
 .form {
@@ -491,7 +538,7 @@ nav .top-left a {
   margin-right: 20px;
   background-color: #659DBD;
   border: 2px solid black;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 #sname {
@@ -499,7 +546,7 @@ nav .top-left a {
   height: 40px;
   background-color: #659DBD;
   border: 2px solid black;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 #email {
@@ -508,7 +555,7 @@ nav .top-left a {
   height: 40px;
   background-color: #659DBD;
   border: 2px solid black;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 #subject {
@@ -517,7 +564,7 @@ nav .top-left a {
   margin-top: 15px;
   background-color: #659DBD;
   border: 2px solid black;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 #message {
@@ -526,7 +573,7 @@ nav .top-left a {
   margin-top: 15px;
   background-color: #659DBD;
   border: 2px solid black;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .submit-btn {
@@ -680,6 +727,7 @@ nav .top-left a {
   font-weight: bold;
   justify-content: center;
   color: #333645;
+  margin-top: 30px;
 }
 
 .scs-navigation {

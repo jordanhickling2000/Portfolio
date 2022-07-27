@@ -1,7 +1,14 @@
+.project-heading {
+    padding-top: 10px;
+    h2 {
+        font-size: 30px;
+    }
+}
+
 .cards {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 60px;
+    margin-top: 40px;
     height: 100%;
     width: 98%;  
     text-align: center;
@@ -26,6 +33,14 @@
         transition-duration: 1s;
         background-color: black;
         color: white;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        transition: color 1.5s;
+        &:hover {
+            color: white;
+        }
     }
 }
 
