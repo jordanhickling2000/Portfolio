@@ -215,6 +215,11 @@
     .card-six {
         max-width: 26.1%;
     }
+    .form {
+        justify-content: center;
+        padding-top: 20px;
+        width: 100%;
+    }
 }
 
 @media (min-width: 1500px) {
@@ -255,6 +260,7 @@
     .form {
         width: 50%;
         float: right;
+        padding-left: 50px;
     }
     .contact-text {
         margin-left: 10px;

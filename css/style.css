@@ -5,13 +5,13 @@ nav {
   line-height: 40px;
   float: left;
   display: inline;
-  background-color: #376580;
+  background-image: linear-gradient(to right, #376580, aqua);
   overflow: hidden;
   font-weight: bold;
 }
 nav .intials {
   text-align: center;
-  color: cyan;
+  color: chartreuse;
   font-size: 4rem;
 }
 nav .border-line {
@@ -20,12 +20,11 @@ nav .border-line {
 }
 nav a {
   color: black;
-  transition: color 1s;
+  transition: color 1.5s;
 }
 nav a:hover {
   cursor: pointer;
-  text-decoration: underline;
-  color: white;
+  color: cornsilk;
 }
 nav .top-left a {
   text-decoration: none;
@@ -67,7 +66,7 @@ nav .top-left a {
   text-align: center;
   margin: auto;
   width: 60%;
-  color: aqua;
+  color: chartreuse;
 }
 #banner h1 {
   position: absolute;
@@ -317,6 +316,11 @@ nav .top-left a {
   .card-six {
     max-width: 26.1%;
   }
+  .form {
+    justify-content: center;
+    padding-top: 20px;
+    width: 100%;
+  }
 }
 @media (min-width: 1500px) {
   nav {
@@ -356,6 +360,7 @@ nav .top-left a {
   .form {
     width: 50%;
     float: right;
+    padding-left: 50px;
   }
   .contact-text {
     margin-left: 10px;
@@ -496,9 +501,8 @@ nav .top-left a {
 
 .get-in-touch {
   line-height: 1.2;
-  background-color: #376580;
-  margin-bottom: 15px;
-  color: black;
+  background-color: #333645;
+  color: wheat;
   font-weight: 600;
   font-size: 20px;
   padding: 15px;
@@ -599,6 +603,7 @@ nav .top-left a {
   text-decoration: underline;
   font-weight: bold;
   justify-content: center;
+  color: floralwhite;
 }
 
 .avatar {
@@ -609,7 +614,7 @@ nav .top-left a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #5392b5;
+  background-image: linear-gradient(to bottom, black, gray, black);
   padding-top: 10px;
 }
 .about-me-content li {
@@ -620,13 +625,13 @@ nav .top-left a {
 }
 .about-me-content a {
   text-decoration: none;
-  transition: color 1s;
-  color: black;
+  transition: color 1.5s;
+  color: white;
+  font-weight: bold;
 }
 .about-me-content a:hover {
   cursor: pointer;
-  text-decoration: underline;
-  color: white;
+  color: yellow;
 }
 
 #about-section-1 {
@@ -726,15 +731,16 @@ nav .top-left a {
   text-align: center;
   font-weight: bold;
   justify-content: center;
-  color: #333645;
-  margin-top: 30px;
+  color: floralwhite;
+  margin-top: 65px;
+  margin-bottom: 65px;
 }
 
 .scs-navigation {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #5392b5;
+  background-image: linear-gradient(to bottom, black, gray, black);
   padding-top: 10px;
 }
 .scs-navigation ul {
@@ -748,13 +754,13 @@ nav .top-left a {
 }
 .scs-navigation a {
   text-decoration: none;
-  transition: color 1s;
-  color: black;
+  transition: color 1.5s;
+  color: white;
+  font-weight: bold;
 }
 .scs-navigation a:hover {
   cursor: pointer;
-  text-decoration: underline;
-  color: white;
+  color: yellow;
 }
 
 .all-scs-info #introduction {
@@ -845,7 +851,7 @@ body {
   font-family: Georgia, sans-serif;
   margin: 0 !important;
   padding: 0 !important;
-  background-color: #659DBD;
+  background-image: linear-gradient(to right, aqua, #376580);
 }
 
 a {
@@ -860,5 +866,4 @@ ul {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
-  padding-right: 15px;
 }/*# sourceMappingURL=style.css.map */

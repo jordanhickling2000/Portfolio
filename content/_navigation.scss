@@ -5,12 +5,12 @@ nav {
     line-height: 40px;
     float: left;
     display: inline;
-    background-color: #376580;
+    background-image: linear-gradient(to right, #376580 , aqua);
     overflow: hidden;
     font-weight: bold;
     .intials {
         text-align: center;
-        color: cyan;
+        color: chartreuse;
         font-size: 4rem;
     }
     .border-line {
@@ -19,12 +19,11 @@ nav {
     }
     a {
         color: black;
-        transition: color 1s;
+        transition: color 1.5s;
     }
     a:hover {
         cursor: pointer;
-        text-decoration: underline; 
-        color: white;
+        color: cornsilk;
     }
     .top-left a {
         text-decoration: none;

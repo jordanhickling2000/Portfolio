@@ -5,6 +5,7 @@
     text-decoration: underline;
     font-weight: bold;
     justify-content: center;
+    color: floralwhite;
 }
 
 .avatar {
@@ -15,7 +16,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #5392b5;
+    background-image: linear-gradient(to bottom, black, gray, black);
     padding-top: 10px;
     li {
         list-style: none;
@@ -25,12 +26,12 @@
     }
     a {
         text-decoration: none;
-        transition: color 1s;
-        color: black;
+        transition: color 1.5s;
+        color: white;
+        font-weight: bold;
         &:hover {
             cursor: pointer;
-            text-decoration: underline; 
-            color: white;
+            color: yellow;
         }
     }   
 }

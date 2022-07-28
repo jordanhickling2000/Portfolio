@@ -3,15 +3,16 @@
     text-align: center;
     font-weight: bold;
     justify-content: center;
-    color: #333645;
-    margin-top: 30px;
+    color: floralwhite;
+    margin-top: 65px;
+    margin-bottom: 65px;
 }
 
 .scs-navigation {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #5392b5;
+    background-image: linear-gradient(to bottom, black, gray, black);
     padding-top: 10px;
     ul {
         text-align:center;
@@ -24,12 +25,12 @@
     }
     a {
         text-decoration: none;
-        transition: color 1s;
-        color: black;
+        transition: color 1.5s;
+        color: white;
+        font-weight: bold;
         &:hover {
             cursor: pointer;
-            text-decoration: underline; 
-            color: white;
+            color: yellow;
         }
     }   
 }
