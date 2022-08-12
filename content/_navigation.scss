@@ -55,3 +55,34 @@ nav {
         cursor: pointer;
     }
 }
+
+// The side bar navigation (on click with Hamburger button)
+.sidebar-navigation {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow: hidden;
+    transition: 0.5s;
+    padding-top: 40px;
+    .sidebar ul {
+        list-style: none;
+        margin-top: 10px;
+    }
+    li {
+        list-style: none;
+        line-height: 30px;
+        padding-top: 10px;
+    }
+    a {
+        color: white;
+        transition: color 1.5s;
+    }
+    a:hover {
+        cursor: pointer;
+        color: black;
+    }
+}

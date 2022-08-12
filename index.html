@@ -28,12 +28,22 @@
                 <span><a href="https://www.instagram.com/fuzedsnow/" target="_blank"><i class="instagram fa-brands fa-instagram"></i></a></span>
                 <span><a href="https://www.linkedin.com/in/jordan-hickling-6567a9215/" target="_blank"><i class="linkedin fa-brands fa-linkedin"></i></a></span>  <!-- Social media Font Awsome logos. -->
             </div>
-        </nav>   
+        </nav>  
             <div id="banner"> <!-- This is the start of the banner section -->
-                <button class="hamburger-btn xs"><i class="hamburger-logo fa-solid fa-bars"></i></button>
+                <button class="hamburger-btn xs" onclick="openNav()"><i class="hamburger-logo fa-solid fa-bars"></i></button>
+                <div class="sidebar-navigation">
+                    <button class="close-btn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></button>
+                    <ul class="sidebar-ul">
+                        <li><a href="about.html">About me</a></li>
+                        <li><a href="index.html">My Portfolio</a></li>
+                        <li><a href="coding.html">Coding Examples</a></li>
+                        <li><a href="scs.html">SCS Software</a></li>
+                        <li><a href="#link">Contact Me</a></li>
+                    </ul>
+                </div> 
                 <div class="banner-content">
-                    <h1>My Name is Jordan Hickling</h1>
-                    <p>I'm a Web Developer</p>
+                    <h1 id="typewriter">My Name is Jordan Hickling</h1>
+                    <p id="p-typewriter">I'm a Web Developer</p>
                     <span>Scroll Down</span>
                     <span id="down-arrow"><i class="fa-solid fa-arrow-down"></i></span>
                 </div>
@@ -119,5 +129,6 @@
                         </div>
                     </div>
                 </div>
+                <script src="js/main.js"></script>
             </body>
         </html>

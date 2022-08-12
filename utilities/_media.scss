@@ -45,6 +45,9 @@
 }
 
 @media (min-width: 768px) {
+    .sidebar-navigation {
+        display: none;
+    }
     .hamburger-btn {
         display: none;
     }
@@ -180,7 +183,7 @@
     }
     #banner {
         margin-left: 20%;
-        height: 50vh;
+        height: 65vh;
     }
     .project-heading {
         margin-left: 20%;
