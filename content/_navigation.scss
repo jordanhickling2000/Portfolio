@@ -58,7 +58,7 @@ nav {
 
 // The side bar navigation (on click with Hamburger button)
 .sidebar-navigation {
-    height: 100%;
+    height: 35%;
     width: 0;
     position: fixed;
     z-index: 1;
@@ -68,14 +68,14 @@ nav {
     overflow: hidden;
     transition: 0.5s;
     padding-top: 40px;
-    .sidebar ul {
-        list-style: none;
-        margin-top: 10px;
-    }
     li {
         list-style: none;
-        line-height: 30px;
+        line-height: 38px;
         padding-top: 10px;
+        text-align: center;
+        padding-right: 10px;
+        padding-left: 0;
+        font-size: 20px;
     }
     a {
         color: white;
@@ -83,6 +83,10 @@ nav {
     }
     a:hover {
         cursor: pointer;
-        color: black;
+        color: aqua;
+    }
+    .navigation-seperator {
+        border: 1px solid white;
+        margin-top: 5px;
     }
 }

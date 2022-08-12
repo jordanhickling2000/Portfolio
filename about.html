@@ -29,7 +29,20 @@
                 </div>
             </div>
         </nav>
-        <button class="hamburger-btn xs"><i class="hamburger-logo fa-solid fa-bars"></i></button>
+        <button class="hamburger-btn xs" onclick="openNav()"><i class="hamburger-logo fa-solid fa-bars"></i></button>
+        <div class="sidebar-navigation">
+            <button class="close-btn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></button>
+                <li><a href="about.html">About me</a></li>
+                <div class="navigation-seperator"></div>
+                <li><a href="index.html">My Portfolio</a></li>
+                <div class="navigation-seperator"></div>
+                <li><a href="coding.html">Coding Examples</a></li>
+                <div class="navigation-seperator"></div>
+                <li><a href="scs.html">SCS Software</a></li>
+                <div class="navigation-seperator"></div>
+                <li><a href="index.html#link">Contact Me</a></li>
+                <div class="navigation-seperator"></div>
+        </div>   
         <div class="about-me">
             <img class="avatar" src="imgs/avatar.png" alt="Picture of an avatar">
             <h1>About Me</h1>
@@ -75,5 +88,6 @@
                 <p>And that's it my simple career path I have planned. Whilst it may not all go that way I am doing what I can to try my best to achieve it. For example taking this scion course is a step in the right direction to learn HTML code. This is just my career path and I have many other plans in terms of location and much more, but I will leave it with this simple career path explanation.</p>
             </div>
         </div>
+        <script src="js/main.js"></script>
     </body>
 </html>

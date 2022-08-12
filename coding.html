@@ -29,11 +29,25 @@
                 </div>
             </div>
         </nav>
-        <button class="hamburger-btn xs"><i class="hamburger-logo fa-solid fa-bars"></i></button>
+        <button class="hamburger-btn xs" onclick="openNav()"><i class="hamburger-logo fa-solid fa-bars"></i></button>
+        <div class="sidebar-navigation">
+            <button class="close-btn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></button>
+                <li><a href="about.html">About me</a></li>
+                <div class="navigation-seperator"></div>
+                <li><a href="index.html">My Portfolio</a></li>
+                <div class="navigation-seperator"></div>
+                <li><a href="coding.html">Coding Examples</a></li>
+                <div class="navigation-seperator"></div>
+                <li><a href="scs.html">SCS Software</a></li>
+                <div class="navigation-seperator"></div>
+                <li><a href="index.html#link">Contact Me</a></li>
+                <div class="navigation-seperator"></div>
+        </div> 
         <div id="coding-header">
             <h1>Coming Soon...</h1>
             <p>Uh Oh..You have stumbled on a page that is coming soon. Please use the navigation tabs to go to a different page or use the "Portfolio" text below to redirect you to the home page</p>
             <p><a href="index.html">Portfolio</a></p>
-        </div>   
+        </div>
+        <script src="js/main.js"></script>   
     </body>
 </html>
