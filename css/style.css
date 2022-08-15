@@ -5,7 +5,7 @@ nav {
   line-height: 40px;
   float: left;
   display: inline;
-  background-image: linear-gradient(to right, #376580, aqua);
+  background-image: linear-gradient(to right, black, lightgray, black);
   overflow: hidden;
   font-weight: bold;
 }
@@ -61,8 +61,7 @@ nav .top-left a {
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
-  background-color: black;
+  background-image: linear-gradient(to right, black, lightgray, black);
   overflow: hidden;
   transition: 0.5s;
   padding-top: 40px;
@@ -82,7 +81,7 @@ nav .top-left a {
 }
 .sidebar-navigation a:hover {
   cursor: pointer;
-  color: aqua;
+  color: red;
 }
 .sidebar-navigation .navigation-seperator {
   border: 1px solid white;
@@ -901,7 +900,7 @@ body {
   font-family: Georgia, sans-serif;
   margin: 0 !important;
   padding: 0 !important;
-  background-image: linear-gradient(to right, aqua, #376580);
+  background-color: gray;
 }
 
 a {

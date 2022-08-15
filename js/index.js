@@ -36,3 +36,49 @@ typingEffect(typewriter, 100);
 
 const pTypewriter = document.querySelector('#p-typewriter');
 typingEffect(pTypewriter, 320);
+
+// ================================================================== 
+//
+//                 start of the form validation
+//
+// ==================================================================
+
+
+const fname = document.querySelector('#fname');
+const sname = document.querySelector('#sname');
+const email = document.querySelector('#email'); 
+const subject = document.querySelector('#subject');
+const message = document.querySelector('#message');
+
+const form = document.querySelector('.form');
+
+form.addEventListener('submit', (e) => {
+        e.preventDefault();
+    if (fname.value === "" || fname.value == null) {
+        alert("First name is required");
+    } else if (sname.value === "" || sname.value == null) {
+        alert("Last name is required");
+    } else if (email.value === "" || email.value == null) {
+        alert("email is required");
+    } else if (subject.value === "" || subject.value == null) {
+        alert("Subject is required"); 
+    } else if (message.value === "" || message.value == null) {
+        alert("A message is required");
+    }
+  }) 
+  
+
+//     function validateform() {
+//     form.addEventListener('submit', (e) =>) {
+//         let messages = []
+//         if (fname.value === '' || fname.value == null) {
+//             messages.push('First name is required')
+//         }
+//         if (messages.length > 0) {
+//             e.preventDefault()
+//             errorElement.innerText = messages.join(', ')
+//         }
+//         e.preventDefault()
+//     }
+// }
+

@@ -118,16 +118,17 @@
                         <span class="envelope-span"><i class="envelope fa-solid fa-envelope"></i> jordanhickling2000@gmail.com</span>
                         <p>Alternatively, you can contact me by completing the form.</p>
                     </div>
-                        <div class="form">
+                        <div class="form" method="GET">
+                            <div id="error"></div>
                             <form>
                                 <div class="name">
-                                    <input type="text" id="fname" name="fname" placeholder="First Name:">
-                                    <input type="text" id="sname" name="sname" placeholder="Second Name:">
+                                    <input type="text" id="fname" name="fname" placeholder="First Name:" >
+                                    <input type="text" id="sname" name="sname" placeholder="Second Name:" >
                                 </div>
-                                <input type="email" id="email" name="email" value="" placeholder="Email:">
-                                <input type="text" id="subject" name="subject" placeholder="Subject:">
-                                <textarea type="text" id="message" name="message" placeholder="Message:" maxlength="480"></textarea>
-                                <button class="submit-btn">Submit</button>
+                                <input type="email" id="email" name="email" value="" placeholder="Email:" >
+                                <input type="text" id="subject" name="subject" placeholder="Subject:" >
+                                <textarea type="text" id="message" name="message" placeholder="Message:" maxlength="480" ></textarea>
+                                <button class="submit-btn" type="submit" value="register">Submit</button>
                             </form>
                         </div>
                     </div>
