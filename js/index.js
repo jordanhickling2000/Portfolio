@@ -52,14 +52,14 @@ const message = document.querySelector('#message');
 
 const form = document.querySelector('.form');
 
+
+
 form.addEventListener('submit', (e) => {
         e.preventDefault();
     if (fname.value === "" || fname.value == null) {
         alert("First name is required");
     } else if (sname.value === "" || sname.value == null) {
         alert("Last name is required");
-    } else if (email.value === "" || email.value == null) {
-        alert("email is required");
     } else if (subject.value === "" || subject.value == null) {
         alert("Subject is required"); 
     } else if (message.value === "" || message.value == null) {
@@ -67,18 +67,25 @@ form.addEventListener('submit', (e) => {
     }
   }) 
   
+    let regex = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
 
-//     function validateform() {
-//     form.addEventListener('submit', (e) =>) {
-//         let messages = []
-//         if (fname.value === '' || fname.value == null) {
-//             messages.push('First name is required')
-//         }
-//         if (messages.length > 0) {
-//             e.preventDefault()
-//             errorElement.innerText = messages.join(', ')
-//         }
-//         e.preventDefault()
-//     }
-// }
+    form.addEventListener('submit', (e) =>{
+    if (email.value === "" || email.value == null) { 
+        alert("Email is required");
+    }
+});
+
+form.addEventListener('submit', (e) =>{
+if (email.value.match(regex)) {
+
+} else {
+    alert("This is an invalid Email Address! Please enter another or check it over.")
+}
+});
+
+
+
+
+    // let regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    // return regex.test(String(email).toLowerCase());
 
