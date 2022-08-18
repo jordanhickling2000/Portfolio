@@ -25,7 +25,14 @@
     margin-left: 50px;
     width: 40px;
     height: 40px;
-    background-color: black;
     border: none;
     color: white;
+    background-color: transparent;
+    .closing-cross {
+        color: white;
+    }
+    .closing-cross:hover {
+        transform: rotate(180deg);
+        transition-duration: 1s;
+    }
 }

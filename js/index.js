@@ -34,8 +34,9 @@ function typingEffect(element, speed){
 const typewriter = document.querySelector('#typewriter');
 typingEffect(typewriter, 100);
 
-const pTypewriter = document.querySelector('#p-typewriter');
-typingEffect(pTypewriter, 320);
+// const pTypewriter = document.querySelector('#p-typewriter');
+// typingEffect(pTypewriter, 320);
+// Commented out until maybe pontentially needed to use for design. (This will make the P underneath the h1 text a typewriter with a slower speed.)
 
 // ================================================================== 
 //
@@ -67,21 +68,34 @@ form.addEventListener('submit', (e) => {
     }
   }) 
   
-    let regex = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+    const regex = /(^(?!.*__.*)[a-z0-9]{4,253}(_?)[a-z0-9]+(?:\.[a-z0-9!#$%&*+\/=?^`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9]*[a-z0-9])?$)/;
 
     form.addEventListener('submit', (e) =>{
     if (email.value === "" || email.value == null) { 
         alert("Email is required");
+    } else if (email.value.match(regex)) {
+
+    } else {
+        alert("This is an invalid Email Address! Please enter another or check it over.")
     }
 });
 
-form.addEventListener('submit', (e) =>{
-if (email.value.match(regex)) {
 
-} else {
-    alert("This is an invalid Email Address! Please enter another or check it over.")
-}
-});
+// Test code for Regex
+
+
+// const isEmailValid = (email) => {
+//     const regexEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+//     return regexEmail.test(email);
+// }; 
+
+// form.addEventListener('submit', (e) =>{
+// if (email.value.match(regex)) {
+
+// } else {
+//     alert("This is an invalid Email Address! Please enter another or check it over.")
+// }
+// });
 
 
 

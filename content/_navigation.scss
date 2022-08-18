@@ -5,12 +5,12 @@ nav {
     line-height: 40px;
     float: left;
     display: inline;
-    background-image: linear-gradient(to right, black, lightgray , black);
+    background-image: linear-gradient(to right, #76ace3, #3b94ed, #187bde);
     overflow: hidden;
     font-weight: bold;
     .intials {
         text-align: center;
-        color: chartreuse;
+        color: white;
         font-size: 4rem;
     }
     .border-line {
@@ -63,7 +63,7 @@ nav {
     position: fixed;
     z-index: 1;
     top: 0;
-    background-image: linear-gradient(to right, black, lightgray , black);
+    background-image: linear-gradient(to right, #76ace3, #3b94ed, #187bde);
     overflow: hidden;
     transition: 0.5s;
     padding-top: 40px;

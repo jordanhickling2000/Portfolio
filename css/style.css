@@ -5,13 +5,13 @@ nav {
   line-height: 40px;
   float: left;
   display: inline;
-  background-image: linear-gradient(to right, black, lightgray, black);
+  background-image: linear-gradient(to right, #76ace3, #3b94ed, #187bde);
   overflow: hidden;
   font-weight: bold;
 }
 nav .intials {
   text-align: center;
-  color: chartreuse;
+  color: white;
   font-size: 4rem;
 }
 nav .border-line {
@@ -61,7 +61,7 @@ nav .top-left a {
   position: fixed;
   z-index: 1;
   top: 0;
-  background-image: linear-gradient(to right, black, lightgray, black);
+  background-image: linear-gradient(to right, #76ace3, #3b94ed, #187bde);
   overflow: hidden;
   transition: 0.5s;
   padding-top: 40px;
@@ -99,7 +99,7 @@ nav .top-left a {
   text-align: center;
   margin: auto;
   width: 60%;
-  color: chartreuse;
+  color: white;
 }
 #banner h1 {
   position: absolute;
@@ -250,7 +250,7 @@ nav .top-left a {
     font-size: 20px;
   }
   #banner {
-    height: 75vh;
+    height: 100vh;
   }
   #banner h1 {
     font-size: 40px;
@@ -317,7 +317,7 @@ nav .top-left a {
   }
   #banner {
     margin-left: 20%;
-    height: 65vh;
+    height: 100vh;
   }
   .project-heading {
     margin-left: 20%;
@@ -431,9 +431,16 @@ nav .top-left a {
   margin-left: 50px;
   width: 40px;
   height: 40px;
-  background-color: black;
   border: none;
   color: white;
+  background-color: transparent;
+}
+.close-btn .closing-cross {
+  color: white;
+}
+.close-btn .closing-cross:hover {
+  transform: rotate(180deg);
+  transition-duration: 1s;
 }
 
 .project-heading {
@@ -644,6 +651,10 @@ nav .top-left a {
   cursor: pointer;
   background-color: black;
   color: white;
+}
+
+::-webkit-input-placeholder {
+  color: black;
 }
 
 .about-me {
@@ -900,7 +911,7 @@ body {
   font-family: Georgia, sans-serif;
   margin: 0 !important;
   padding: 0 !important;
-  background-color: gray;
+  background-image: linear-gradient(to right, #3b94ed, #187bde);
 }
 
 a {
