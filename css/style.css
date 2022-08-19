@@ -846,6 +846,17 @@ nav li:hover {
   text-decoration: underline;
 }
 
+.first-code {
+  text-align: center;
+}
+.first-code img {
+  height: 30vh;
+  margin-top: 30px;
+}
+.first-code p {
+  font-weight: 600;
+}
+
 #scs-heading {
   text-align: center;
   font-weight: bold;
