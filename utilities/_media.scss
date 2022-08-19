@@ -45,6 +45,15 @@
 }
 
 @media (min-width: 768px) {
+    #banner {
+        h1 {
+            font-size: 40px;
+        }
+        p {
+            top:62%;
+            font-size: 30px;
+        }
+    }
     .sidebar-navigation {
         display: none;
     }
@@ -111,9 +120,6 @@
 }
 
 @media (min-width: 992px) {
-    nav {
-        font-size: 20px;
-    }
     #banner {
         height: 100vh;
         h1 {
@@ -152,71 +158,71 @@
 
 @media (min-width: 1200px) {
     nav {
-        max-width: 20%;
+        max-width: 16%;
     }
     .all-scs-info {
-        margin-left: 20%;
+        margin-left: 16%;
     }
     .scs-navigation {
-        margin-left: 20%;
+        margin-left: 16%;
         ul {
         display: none;
         }
     }
     #scs-heading {
-        margin-left: 20%;
+        margin-left: 16%;
     }
     #coding-header {
-        margin-left: 20%;
+        margin-left: 16%;
     }
     .about-me {
-        margin-left: 20%;
+        margin-left: 16%;
     }
     .about-me-content {
-        margin-left: 20%;
+        margin-left: 16%;
         ul {
             display: none;
         }
     }
     .all-about-me {
-        margin-left: 20%;
+        margin-left: 16%;
     }
     #banner {
-        margin-left: 20%;
+        margin-left: 16%;
         height: 100vh;
     }
     .project-heading {
-        margin-left: 20%;
+        margin-left: 16%;
     }
     .cards {
-        margin-left: 20%;
+        margin-left: 16%;
     }
     .get-in-touch {
-        margin-left: 20%;
+        margin-left: 16%;
     }
     .card-one {
         margin-left: 6px;
-        max-width: 26%;
+        max-width: 27%;
         margin-right: 10px;
     }
     .card-two {
-        max-width: 26%;
+        max-width: 27%;
         margin-right: 10px;
     }
     .card-three {
-        max-width: 26%;
+        max-width: 27%;
     }
     .card-four {
         margin-left: 6px;
-        max-width: 26.1%;
+        max-width: 27%;
         margin-right: 10px;
     }
     .card-five {
-        max-width: 26.1%;
+        max-width: 27%;
         margin-right: 10px;
     }
     .card-six {
-        max-width: 26.1%;
+        max-width: 27%;
     }
     .form {
         justify-content: center;
