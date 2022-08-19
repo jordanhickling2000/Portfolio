@@ -6,6 +6,7 @@
     color: floralwhite;
     margin-top: 65px;
     margin-bottom: 65px;
+    font-size: 30px;
 }
 
 .scs-navigation {
@@ -44,13 +45,15 @@
         h2 {
             font-size: 25px;
             color: #C4A484;
-            margin-left: 5px;
-            margin-right: 5px;  
+            text-align: center;
+            text-decoration: underline;
+            padding-bottom: 20px;
         }
         p {
-            font-size: 20px;
-            margin-left: 5px;
-            margin-right: 5px;
+            font-size: 18px;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
         }
     }
     #treehouse {
@@ -62,20 +65,21 @@
         h2 {
             font-size: 25px;
             color: #C4A484;
-            margin-left: 5px;
-            margin-right: 5px;  
+            text-align: center;
+            text-decoration: underline;
+            padding-bottom: 20px;
         }
         p {
-            font-size: 20px;
-            margin-left: 5px;
-            margin-right: 5px;
+            font-size: 18px;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
         }
         a {
             text-decoration: none;
             color: green;
             transition: color 2s;
-            margin-right: 5px;
-            margin-left: 5px;
+            text-align: center;
             &:hover {
                 cursor: pointer;
                 text-decoration: underline;
@@ -93,17 +97,21 @@
         h2 {
             font-size: 25px;
             color: #C4A484;
-            margin-left: 5px;
-            margin-right: 5px;  
+            text-align: center;
+            text-decoration: underline;
+            padding-bottom: 20px; 
         }
         p {
-            font-size: 20px;
-            margin-left: 5px;
-            margin-right: 5px;
+            font-size: 18px;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
         }
         ol {
             font-size: 20px;
             margin-right: 5px;
+            text-align: center;
+            list-style-position: inside;
         }
     }
 }

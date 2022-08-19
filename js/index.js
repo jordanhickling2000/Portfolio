@@ -75,6 +75,21 @@ form.addEventListener('submit', (e) => {
     }
 }) 
 
+const regex = /(^(?!.*__.*)[a-z0-9]{4,253}(_?)[a-z0-9]+(?:\.[a-z0-9!#$%&*+\/=?^`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9]*[a-z0-9])?$)/;
+
+form.addEventListener('submit', (e) =>{
+if (email.value === "" || email.value == null) { 
+    document.getElementById("email").style.borderColor = "red";
+    alert("Email is required");
+} else if (email.value.match(regex)) {
+    document.getElementById("email").style.borderColor = "green";
+} else {
+    document.getElementById("email").style.borderColor = "red";
+    alert("This is an invalid Email Address! Please enter another or check it over.")
+}
+});
+
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     if (subject.value === "" || subject.value == null) {
@@ -96,20 +111,6 @@ form.addEventListener('submit', (e) => {
 }) 
 
 
-
-    const regex = /(^(?!.*__.*)[a-z0-9]{4,253}(_?)[a-z0-9]+(?:\.[a-z0-9!#$%&*+\/=?^`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9]*[a-z0-9])?$)/;
-
-    form.addEventListener('submit', (e) =>{
-    if (email.value === "" || email.value == null) { 
-        document.getElementById("email").style.borderColor = "red";
-        alert("Email is required");
-    } else if (email.value.match(regex)) {
-        document.getElementById("email").style.borderColor = "green";
-    } else {
-        document.getElementById("email").style.borderColor = "red";
-        alert("This is an invalid Email Address! Please enter another or check it over.")
-    }
-});
 
 
 

@@ -733,9 +733,14 @@ nav li:hover {
 #about-section-1 h2 {
   font-size: 20px;
   color: #C4A484;
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 20px;
 }
 #about-section-1 p {
-  font-size: 15px;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 #about-section-1 a {
   text-decoration: none;
@@ -754,9 +759,14 @@ nav li:hover {
 #hobbies h2 {
   font-size: 20px;
   color: #C4A484;
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 20px;
 }
 #hobbies p {
-  font-size: 15px;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 #hobbies a {
   text-decoration: none;
@@ -775,9 +785,14 @@ nav li:hover {
 #education h2 {
   font-size: 20px;
   color: #C4A484;
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 20px;
 }
 #education p {
-  font-size: 15px;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #career-path {
@@ -789,9 +804,14 @@ nav li:hover {
 #career-path h2 {
   font-size: 20px;
   color: #C4A484;
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 20px;
 }
 #career-path p {
-  font-size: 15px;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #coding-header {
@@ -825,6 +845,7 @@ nav li:hover {
   color: floralwhite;
   margin-top: 65px;
   margin-bottom: 65px;
+  font-size: 30px;
 }
 
 .scs-navigation {
@@ -863,13 +884,15 @@ nav li:hover {
 .all-scs-info #introduction h2 {
   font-size: 25px;
   color: #C4A484;
-  margin-left: 5px;
-  margin-right: 5px;
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 20px;
 }
 .all-scs-info #introduction p {
-  font-size: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
 }
 .all-scs-info #treehouse {
   padding: 10px;
@@ -881,20 +904,21 @@ nav li:hover {
 .all-scs-info #treehouse h2 {
   font-size: 25px;
   color: #C4A484;
-  margin-left: 5px;
-  margin-right: 5px;
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 20px;
 }
 .all-scs-info #treehouse p {
-  font-size: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
 }
 .all-scs-info #treehouse a {
   text-decoration: none;
   color: green;
   transition: color 2s;
-  margin-right: 5px;
-  margin-left: 5px;
+  text-align: center;
 }
 .all-scs-info #treehouse a:hover {
   cursor: pointer;
@@ -912,17 +936,21 @@ nav li:hover {
 .all-scs-info #netmatters h2 {
   font-size: 25px;
   color: #C4A484;
-  margin-left: 5px;
-  margin-right: 5px;
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 20px;
 }
 .all-scs-info #netmatters p {
-  font-size: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
 }
 .all-scs-info #netmatters ol {
   font-size: 20px;
   margin-right: 5px;
+  text-align: center;
+  list-style-position: inside;
 }
 
 * {
