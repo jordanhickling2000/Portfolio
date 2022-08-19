@@ -27,6 +27,7 @@
         margin: 0;
         font-weight: 300;
         font-size: 4vw;
+        font-weight: bold;
     }
     span {
         position: absolute;
@@ -35,17 +36,22 @@
         transform: translate(-50%, -50%);
         margin: 0;
         font-size: 20px;
+        font-weight: bold;
+        color: white;
         &:hover {
             cursor: pointer;
             text-decoration: underline;
         }
     }
-    #down-arrow {
-        position: absolute;
-        top: 94%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin: 0;
-        font-size: 20px;
-    }
 }
+
+// #down-arrow {
+//     position: absolute;
+//     top: 93%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     margin: 0;
+//     font-size: 20px;
+// } 
+// I have changed the down arrow to make it in the same span as "Scroll down" so when the user hovers over the arrow or text they can click and scroll down.
+// I will keep the CSS commented incase of changes.

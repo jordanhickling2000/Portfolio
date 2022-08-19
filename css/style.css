@@ -2,7 +2,6 @@ nav {
   position: fixed;
   width: 25vw;
   height: 100vh;
-  line-height: 40px;
   float: left;
   display: inline;
   background-image: linear-gradient(to right, #76ace3, #3b94ed, #187bde);
@@ -26,10 +25,6 @@ nav a:hover {
   cursor: pointer;
   color: cornsilk;
 }
-nav .top-left a {
-  text-decoration: none;
-  color: aqua;
-}
 
 .social-media {
   float: left;
@@ -37,13 +32,13 @@ nav .top-left a {
   justify-content: center;
 }
 
-.instagram {
+.github {
   color: purple;
   font-size: 2.5vw;
   margin-right: 20px;
   margin-left: 40px;
 }
-.instagram:hover {
+.github:hover {
   cursor: pointer;
 }
 
@@ -118,6 +113,7 @@ nav .top-left a {
   margin: 0;
   font-weight: 300;
   font-size: 4vw;
+  font-weight: bold;
 }
 #banner span {
   position: absolute;
@@ -126,18 +122,12 @@ nav .top-left a {
   transform: translate(-50%, -50%);
   margin: 0;
   font-size: 20px;
+  font-weight: bold;
+  color: white;
 }
 #banner span:hover {
   cursor: pointer;
   text-decoration: underline;
-}
-#banner #down-arrow {
-  position: absolute;
-  top: 94%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  font-size: 20px;
 }
 
 @media (min-width: 576px) {
@@ -329,7 +319,7 @@ nav .top-left a {
     margin-left: 20%;
   }
   .card-one {
-    margin-left: 24px;
+    margin-left: 6px;
     max-width: 26%;
     margin-right: 10px;
   }
@@ -341,7 +331,7 @@ nav .top-left a {
     max-width: 26%;
   }
   .card-four {
-    margin-left: 24px;
+    margin-left: 6px;
     max-width: 26.1%;
     margin-right: 10px;
   }
@@ -360,38 +350,65 @@ nav .top-left a {
 }
 @media (min-width: 1500px) {
   nav {
-    max-width: 15%;
+    max-width: 12%;
   }
   .all-scs-info {
-    margin-left: 15%;
+    margin-left: 12%;
   }
   .scs-navigation {
-    margin-left: 15%;
+    margin-left: 12%;
   }
   #scs-heading {
-    margin-left: 15%;
+    margin-left: 12%;
   }
   #coding-header {
-    margin-left: 15%;
+    margin-left: 12%;
   }
   .about-me-content {
-    margin-left: 15%;
+    margin-left: 12%;
+  }
+  .about-me {
+    margin-left: 10%;
   }
   .all-about-me {
-    margin-left: 15%;
+    margin-left: 12%;
   }
   #banner {
-    margin-left: 15%;
+    margin-left: 12%;
   }
   .project-heading {
-    margin-left: 15%;
+    margin-left: 12%;
   }
   .cards {
-    margin-left: 15%;
+    margin-left: 12%;
+  }
+  .card-one {
+    margin-left: 6px;
+    max-width: 29%;
+    margin-right: 10px;
+  }
+  .card-two {
+    max-width: 29%;
+    margin-right: 10px;
+  }
+  .card-three {
+    max-width: 29%;
+  }
+  .card-four {
+    margin-left: 6px;
+    max-width: 29%;
+    margin-right: 10px;
+  }
+  .card-five {
+    max-width: 29%;
+    margin-right: 10px;
+  }
+  .card-six {
+    max-width: 29%;
   }
   .get-in-touch {
     display: flex;
-    margin-left: 15%;
+    margin-left: 12%;
   }
   .form {
     width: 50%;
@@ -662,7 +679,6 @@ nav .top-left a {
   margin-top: 30px;
   text-decoration: underline;
   font-weight: bold;
-  justify-content: center;
   color: floralwhite;
 }
 
@@ -904,6 +920,7 @@ html {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {

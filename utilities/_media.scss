@@ -195,7 +195,7 @@
         margin-left: 20%;
     }
     .card-one {
-        margin-left: 24px;
+        margin-left: 6px;
         max-width: 26%;
         margin-right: 10px;
     }
@@ -207,7 +207,7 @@
         max-width: 26%;
     }
     .card-four {
-        margin-left: 24px;
+        margin-left: 6px;
         max-width: 26.1%;
         margin-right: 10px;
     }
@@ -227,38 +227,65 @@
 
 @media (min-width: 1500px) {
     nav {
-        max-width: 15%;
+        max-width: 12%;
     }
     .all-scs-info {
-        margin-left: 15%;
+        margin-left: 12%;
     }
     .scs-navigation {
-        margin-left: 15%;
+        margin-left: 12%;
     }
     #scs-heading {
-        margin-left: 15%;
+        margin-left: 12%;
     }
     #coding-header {
-        margin-left: 15%;
+        margin-left: 12%;
     }
     .about-me-content {
-        margin-left: 15%;
+        margin-left: 12%;
+    }
+    .about-me {
+        margin-left: 10%;
     }
     .all-about-me {
-        margin-left: 15%;
+        margin-left: 12%;
     }
     #banner {
-        margin-left: 15%;
+        margin-left: 12%;
     }
     .project-heading {
-        margin-left: 15%;
+        margin-left: 12%;
     }
     .cards {
-        margin-left: 15%;
+        margin-left: 12%;
+    }
+    .card-one {
+        margin-left: 6px;
+        max-width: 29%;
+        margin-right: 10px;
+    }
+    .card-two {
+        max-width: 29%;
+        margin-right: 10px;
+    }
+    .card-three {
+        max-width: 29%;
+    }
+    .card-four {
+        margin-left: 6px;
+        max-width: 29%;
+        margin-right: 10px;
+    }
+    .card-five {
+        max-width: 29%;
+        margin-right: 10px;
+    }
+    .card-six {
+        max-width: 29%;
     }
     .get-in-touch {
         display: flex;
-        margin-left: 15%;
+        margin-left: 12%;
     }
     .form {
         width: 50%;

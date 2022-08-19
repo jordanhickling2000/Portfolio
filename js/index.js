@@ -58,25 +58,65 @@ const form = document.querySelector('.form');
 form.addEventListener('submit', (e) => {
         e.preventDefault();
     if (fname.value === "" || fname.value == null) {
-        alert("First name is required");
-    } else if (sname.value === "" || sname.value == null) {
-        alert("Last name is required");
-    } else if (subject.value === "" || subject.value == null) {
-        alert("Subject is required"); 
-    } else if (message.value === "" || message.value == null) {
-        alert("A message is required");
+        document.getElementById("fname").style.borderColor = "red";
+        // alert("First name is required");
+    // } else if (sname.value === "" || sname.value == null) {
+    //     document.getElementById("sname").style.borderColor = "red";
+        // alert("Last name is required");
+    // } else if (subject.value === "" || subject.value == null) {
+    //     document.getElementById("subject").style.borderColor = "red";
+        // alert("Subject is required"); 
+    // } else if (message.value === "" || message.value == null) {
+    //     document.getElementById("message").style.borderColor = "red";
+        // alert("A message is required");
+    } else {
+        document.getElementById("fname").style.borderColor = "green";
+        // document.getElementById("sname").style.borderColor = "green";
+        // document.getElementById("subject").style.borderColor = "green";
+        // document.getElementById("message").style.borderColor = "green";
     }
   }) 
-  
+
+  form.addEventListener('submit', (e) => {
+        e.preventDefault();
+    if (sname.value === "" || sname.value == null) {
+        document.getElementById("sname").style.borderColor = "red";
+    } else {
+        document.getElementById("sname").style.borderColor = "green";
+    }
+}) 
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (subject.value === "" || subject.value == null) {
+        document.getElementById("subject").style.borderColor = "red";
+    } else {
+        document.getElementById("subject").style.borderColor = "green";
+    }
+}) 
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (message.value === "" || message.value == null) {
+        document.getElementById("message").style.borderColor = "red";
+    } else {
+        document.getElementById("message").style.borderColor = "green";
+    }
+}) 
+
+
+
     const regex = /(^(?!.*__.*)[a-z0-9]{4,253}(_?)[a-z0-9]+(?:\.[a-z0-9!#$%&*+\/=?^`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9]*[a-z0-9])?$)/;
 
     form.addEventListener('submit', (e) =>{
     if (email.value === "" || email.value == null) { 
-        alert("Email is required");
+        document.getElementById("email").style.borderColor = "red";
+        // alert("Email is required");
     } else if (email.value.match(regex)) {
-
+        document.getElementById("email").style.borderColor = "green";
     } else {
-        alert("This is an invalid Email Address! Please enter another or check it over.")
+        document.getElementById("email").style.borderColor = "red";
+        // alert("This is an invalid Email Address! Please enter another or check it over.")
     }
 });
 

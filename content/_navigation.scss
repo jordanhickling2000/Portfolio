@@ -2,7 +2,6 @@ nav {
     position: fixed;
     width:25vw;
     height: 100vh;
-    line-height: 40px;
     float: left;
     display: inline;
     background-image: linear-gradient(to right, #76ace3, #3b94ed, #187bde);
@@ -25,10 +24,6 @@ nav {
         cursor: pointer;
         color: cornsilk;
     }
-    .top-left a {
-        text-decoration: none;
-        color: aqua;
-    }
   }
 
 
@@ -38,7 +33,7 @@ nav {
     justify-content: center;
 }
  
-.instagram {
+.github {
     color: purple;
     font-size: 2.5vw;
     margin-right: 20px;
