@@ -55,6 +55,14 @@
         background-color: black;
         color: white;
     }
+    a {
+        text-decoration: none;
+        color: black;
+        transition: color 1.5s;
+        &:hover {
+            color: white;
+        }
+    }
 }
 
 .card-three {

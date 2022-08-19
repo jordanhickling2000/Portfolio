@@ -534,6 +534,14 @@ nav li:hover {
   background-color: black;
   color: white;
 }
+.card-two a {
+  text-decoration: none;
+  color: black;
+  transition: color 1.5s;
+}
+.card-two a:hover {
+  color: white;
+}
 
 .card-three {
   width: 100%;
