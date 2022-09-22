@@ -1,14 +1,9 @@
-#coding-header {
-    font-size:20px;
-    h1 {
-        text-align: center;
-        color: black;
-    }
+.code-type {
+    text-align: center;
 }
 
 .first-code {
     text-align: center;
-    background-color: forestgreen;
     padding: 10px;
     img {
         height: 30vh;
@@ -20,3 +15,33 @@
         font-weight: 600;
     }
 }
+
+table {
+    border-collapse: collapse;
+    width: 40%;
+}
+
+#bottom-table {
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border:1px solid black;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 20px;
+  }
+
+  th, td {
+    padding: 5px;
+  }
+
+.second-code {
+    text-align: center;
+    p {
+        padding-left: 50px;
+        padding-right: 50px;
+        font-weight: bold;
+    }
+}
+

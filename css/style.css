@@ -210,6 +210,9 @@ nav li:hover {
   .first-code {
     margin-left: 25%;
   }
+  .second-code {
+    margin-left: 25%;
+  }
   .about-me {
     margin-left: 25%;
   }
@@ -314,6 +317,9 @@ nav li:hover {
   .first-code {
     margin-left: 16%;
   }
+  .second-code {
+    margin-left: 16%;
+  }
   .about-me {
     margin-left: 16%;
   }
@@ -386,6 +392,9 @@ nav li:hover {
     margin-left: 10%;
   }
   .first-code {
+    margin-left: 10%;
+  }
+  .second-code {
     margin-left: 10%;
   }
   .about-me-content {
@@ -831,17 +840,12 @@ nav li:hover {
   margin-right: 10px;
 }
 
-#coding-header {
-  font-size: 20px;
-}
-#coding-header h1 {
+.code-type {
   text-align: center;
-  color: black;
 }
 
 .first-code {
   text-align: center;
-  background-color: forestgreen;
   padding: 10px;
 }
 .first-code img {
@@ -852,6 +856,35 @@ nav li:hover {
 }
 .first-code p {
   font-weight: 600;
+}
+
+table {
+  border-collapse: collapse;
+  width: 40%;
+}
+
+#bottom-table {
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 5px;
+}
+
+.second-code {
+  text-align: center;
+}
+.second-code p {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-weight: bold;
 }
 
 #scs-heading {

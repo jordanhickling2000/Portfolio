@@ -42,15 +42,214 @@
                 <div class="navigation-seperator"></div>
                 <li><a href="index.html#link">Contact Me</a></li>
                 <div class="navigation-seperator"></div>
-        </div> 
-        <div id="coding-header">
-            <h1>Coding Examples</h1>
         </div>
         <div class="first-code">
+            <h1 class="code-type"><u>Coding Examples</u></h1>
+            <h1 class="code-type"><u>HTML Code</u></h1>
             <img src="imgs/netmatters-code.png" alt="code from a previous project">
             <p>I used HTML for this section of the website's code. This is also supported with SCSS and CSS</p>
             <p>This code creates cards for the user to view and displays information with a form of navigation on it.</p>
             <p>I have used it because it allows easy access to different pages and is a main point of the website allowing the user to click on one and get more information.</p>
+        </div>
+        <div class="second-code">
+            <h1 class="code-type"><u>SQL Code</u></h1>
+            <table>
+            <tr>
+                <th>emp_id</th>
+                <th>emp_name</th>
+                <th>job_name</th>
+                <th>manager_id</th>
+                <th>hire_date</th>
+                <th>salary</th>
+                <th>commission</th>
+                <th>dep_id</th>
+            </tr>
+            <tr>
+                <td>68319</td>
+                <td>KAYLING </td>
+                <td>PRESIDENT</td>
+                <td>        </td>  
+                <td>1991-11-18 </td>
+                <td>6000.00</td>
+                <td>        </td>  
+                <td>1001</td>
+            </tr>
+            <tr>
+                <td>66928</td>
+                <td>BLAZE </td>
+                <td>MANAGER</td>
+                <td>68319</td>  
+                <td>1991-05-01</td>
+                <td>2750.00</td>
+                <td>        </td>  
+                <td>3001</td>
+            </tr>
+            <tr>
+                <td>67832</td>
+                <td>CLARE</td>
+                <td>MANAGER</td>
+                <td>68319</td>  
+                <td>1991-06-09</td>
+                <td>2550.00</td>
+                <td></td>  
+                <td>1001</td>
+            </tr>
+            <tr>
+                <td>65646</td>
+                <td>JONAS</td>
+                <td>MANAGER</td>
+                <td>68319</td>  
+                <td>1991-04-02</td>
+                <td>2957.00</td>
+                <td></td>  
+                <td>2001</td>
+            </tr>
+            <tr>
+                <td>67858</td>
+                <td>SCARLET</td>
+                <td>ANALYST</td>
+                <td>65646</td>  
+                <td>1997-04-19</td>
+                <td>3100.00</td>
+                <td></td>  
+                <td>2001</td>
+            </tr>
+            <tr>
+                <td>69062</td>
+                <td>FRANK</td>
+                <td>ANALYST</td>
+                <td>65646</td>  
+                <td>1991-12-03</td>
+                <td>3100.00</td>
+                <td></td>  
+                <td>2001</td>
+            </tr>
+            <tr>
+                <td>63679</td>
+                <td>SANDRINE</td>
+                <td>CLERK</td>
+                <td>69062</td>  
+                <td>1990-12-18</td>
+                <td>900.00</td>
+                <td></td>  
+                <td>2001</td>
+            </tr>
+            <tr>
+                <td>64989</td>
+                <td>ADELYN</td>
+                <td>SALESMAN</td>
+                <td>66928</td>  
+                <td>1991-02-20</td>
+                <td>1700.00</td>
+                <td>400.00</td>  
+                <td>3001</td>
+            </tr>
+            <tr>
+                <td>65271</td>
+                <td>WADE</td>
+                <td>SALESMAN</td>
+                <td>66928</td>  
+                <td>1991-02-22</td>
+                <td>1350.00</td>
+                <td>600.00</td>  
+                <td>3001</td>
+            </tr>
+            <tr>
+                <td>66564</td>
+                <td>MADDEN</td>
+                <td>SALESMAN</td>
+                <td>66928</td>  
+                <td>1991-09-28</td>
+                <td>1350.00</td>
+                <td>1500.00</td>  
+                <td>3001</td>
+            </tr>
+            <tr>
+                <td>68454</td>
+                <td>TUCKER</td>
+                <td>SALESMAN</td>
+                <td>66928</td>  
+                <td>1991-09-08</td>
+                <td>1600.00</td>
+                <td>0.00</td>  
+                <td>3001</td>
+            </tr>
+            <tr>
+                <td>68736</td>
+                <td>ADNRES</td>
+                <td>CLERK</td>
+                <td>67858</td>  
+                <td>1997-05-23</td>
+                <td>1200.00</td>
+                <td></td>  
+                <td>2001</td>
+            </tr>
+            <tr>
+                <td>69000</td>
+                <td>JULIUS</td>
+                <td>CLERK</td>
+                <td>66928</td>  
+                <td>1991-12-03</td>
+                <td>1050.00</td>
+                <td></td>  
+                <td>3001</td>
+            </tr>
+            <tr>
+                <td>69324</td>
+                <td>MARKER</td>
+                <td>CLERK</td>
+                <td>67832</td>  
+                <td>1992-01-23</td>
+                <td>1400.00</td>
+                <td></td>  
+                <td>1001</td>
+            </tr>
+        </table>
+            <p>This is the subquery I have made and used: <br>
+                "SELECT emp_id, emp_name, job_name, commission
+                FROM employees
+                WHERE emp_id IN
+                    (SELECT emp_id
+                     FROM employees
+                     WHERE commission IS NOT NULL);"</p>
+            <p>With this subquery the objective is to make the table only get the commissions that are not empty in the table. This means that the only 4 that should display are "ADELYN", "WADE", "MADDEN", "TUCKER". You could go further and use "AND" in the where clause and say "commission > 0". 
+                This would then kick out "TUCKER" and display just 4 names.</p>
+            <p>The Query SELECTS and shows only the employee ID (emp_id), the Employees Name (emp_name), the job name(job_name) and the commission from the employees table (what you see above)
+            It then searches for the employee ID IN the subquery that is written afterwards that selects the emp_id which is what it will get following the where clause. The where clause searches for the
+            commissions that have cells filled. "IS NOT NULL" means that it will return with cells that are not empty.</p>
+            <p>The outcome which has been tested and shown is below:</p>
+            <table id="bottom-table">
+                <tr>
+                    <th>emp_id</th>
+                    <th>emp_name</th>
+                    <th>job_name</th>
+                    <th>commission</th>
+                </tr>
+                <tr>
+                    <td>64989</td>
+                    <td>ADELYN</td>
+                    <td>SALESMAN</td>
+                    <td>400.00</td>  
+                </tr>
+                <tr>
+                    <td>65271</td>
+                    <td>WADE</td>
+                    <td>SALESMAN</td>
+                    <td>600.00</td>  
+                </tr>
+                <tr>
+                    <td>66564</td>
+                    <td>MADDEN</td>
+                    <td>SALESMAN</td>
+                    <td>1500.00</td>  
+                </tr>
+                </tr>
+                    <td>68454</td>
+                    <td>TUCKER</td>
+                    <td>SALESMAN</td>
+                    <td>0.00</td>  
+                </tr>
+            </table>
         </div>
         <script src="js/main.js"></script>   
     </body>
