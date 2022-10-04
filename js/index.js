@@ -71,11 +71,11 @@ form.addEventListener('submit', (e) => {
         e.preventDefault();
     if (sname.value === "" || sname.value == null) {
         document.getElementById("sname").style.borderColor = "red";
-        document.getElementById("warning-form-lname").style.display="inline"
+        document.getElementById("warning-form-sname").style.display="inline"
         // alert("Last name is required")
     } else {
         document.getElementById("sname").style.borderColor = "green";
-        document.getElementById("warning-form-lname").style.display="none"
+        document.getElementById("warning-form-sname").style.display="none"
     }
 }) 
 
@@ -123,9 +123,22 @@ form.addEventListener('submit', (e) => {
     }
 }) 
 
-// form.addEventListener('submit', (e) => {
-//     document.getElementById("success-popup").style.display="inl"
-// })
+form.addEventListener('submit', (e) => {
+    if(fname.style.borderColor === "green" && sname.style.borderColor === "green" && email.style.borderColor === "green" && subject.style.borderColor === "green" && message.style.borderColor === "green") {
+        document.getElementById("success-popup").style.display="inline";
+        document.getElementById("popup-container").style.display="inline";
+        document.getElementById("close-popup-button").style.display="inline";
+    }
+})
+
+const closePopup = document.querySelector('#close-popup-button');
+
+closePopup.addEventListener('click', closeSuccessPopup)
+    function closeSuccessPopup() {
+        document.getElementById("success-popup").style.display="none";
+        document.getElementById("popup-container").style.display="none";
+        document.getElementById("close-popup-button").style.display="none";
+}
 
 // ================================================================== 
 //

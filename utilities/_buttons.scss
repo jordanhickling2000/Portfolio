@@ -37,3 +37,17 @@
         transition-duration: 1s;
     }
 }
+
+#close-popup-button {
+    position: absolute;
+    color: white;
+    border-radius: 50%;
+    height: 3vh;
+    width: 3vh;
+    font-size: 2.5vh;
+    background-color: black;
+    cursor: pointer;
+    right: 0;
+    margin-right: 20px;
+}
+

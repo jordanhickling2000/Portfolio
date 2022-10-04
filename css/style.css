@@ -521,6 +521,19 @@ nav li:hover {
   transition-duration: 1s;
 }
 
+#close-popup-button {
+  position: absolute;
+  color: white;
+  border-radius: 50%;
+  height: 3vh;
+  width: 3vh;
+  font-size: 2.5vh;
+  background-color: black;
+  cursor: pointer;
+  right: 0;
+  margin-right: 20px;
+}
+
 .project-heading {
   padding-top: 10px;
 }
@@ -770,7 +783,7 @@ nav li:hover {
   color: black;
 }
 
-#warning-form-fname, #warning-form-lname,
+#warning-form-fname, #warning-form-sname,
 #warning-form-email, #warning-form-regex,
 #warning-form-subject, #warning-form-message {
   display: none;
@@ -1075,10 +1088,19 @@ th, td {
 #success-popup {
   display: none;
   color: green;
-  top: 0;
-  width: 100vw;
-  height: 5vh;
   font-size: 3vh;
+  font-weight: bold;
+}
+
+#popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5vh;
+  background-color: black;
+  text-align: center;
+  padding-top: 5px;
 }
 
 * {
