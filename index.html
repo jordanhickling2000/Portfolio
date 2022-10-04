@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <head>
         <title>Portfolio</title>
+        <link rel="icon" type="image/png" href="imgs/favicons/favicon.ico">
     </head>
     <body>
         <nav>
@@ -17,7 +18,7 @@
                 <div>
                     <ul class="navigation">
                         <li><a href="about.html">About me</a></li>
-                        <li><a href="index.html">My Portfolio</a></li>
+                        <li><a href="#card-link">My Portfolio</a></li>
                         <li><a href="coding.html">Coding Examples</a></li>
                         <li><a href="scs.html">SCS Software</a></li>
                         <li><a href="#link">Contact Me</a></li>
@@ -29,21 +30,27 @@
                 <span><a href="https://www.linkedin.com/in/jordan-hickling-6567a9215/" target="_blank"><i class="linkedin fa-brands fa-linkedin"></i></a></span>  <!-- Social media Font Awsome logos. -->
             </div>
         </nav>  
+        <div class="sidebar-navigation">
+            <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+                <li><a href="index.html"><h1 class="sidebar-initials">JH</h1></a></li>
+                <div class="navigation-seperator"></div>
+                <li><a href="about.html">About me</a></li>
+                <div class="navigation-seperator"></div>
+                <li><a href="index.html#card-link">My Portfolio</a></li>
+                <div class="navigation-seperator"></div>
+                <li><a href="coding.html">Coding Examples</a></li>
+                <div class="navigation-seperator"></div>
+                <li><a href="scs.html">SCS Software</a></li>
+                <div class="navigation-seperator"></div>
+                <li><a href="index.html#link">Contact Me</a></li>
+                <div class="navigation-seperator"></div>
+                <div class="social-media">
+                    <span><a href="https://github.com/JordanHicklingNetMatters" target="_blank"><i class="sidebar-github fa-brands fa-github"></i></a></span>
+                    <span><a href="https://www.linkedin.com/in/jordan-hickling-6567a9215/" target="_blank"><i class="sidebar-linkedin fa-brands fa-linkedin"></i></a></span>  <!-- Social media Font Awsome logos. -->
+                </div><!-- Social media Font Awsome logos. -->
+        </div> 
             <div id="banner"> <!-- This is the start of the banner section -->
-                <button class="hamburger-btn xs"><i class="hamburger-logo fa-solid fa-bars"></i></button>
-                <div class="sidebar-navigation">
-                    <button class="close-btn"><i class="closing-cross fa-solid fa-xmark"></i></button>
-                        <li><a href="about.html">About me</a></li>
-                        <div class="navigation-seperator"></div>
-                        <li><a href="index.html">My Portfolio</a></li>
-                        <div class="navigation-seperator"></div>
-                        <li><a href="coding.html">Coding Examples</a></li>
-                        <div class="navigation-seperator"></div>
-                        <li><a href="scs.html">SCS Software</a></li>
-                        <div class="navigation-seperator"></div>
-                        <li><a href="#link">Contact Me</a></li>
-                        <div class="navigation-seperator"></div>
-                </div> 
+                <button class="hamburger-btn xs"><i class="hamburger-logo fa-solid fa-bars"></i></button>  
                 <div class="banner-content">
                     <h1 id="typewriter">My Name is Jordan Hickling</h1>
                     <p id="p-typewriter">I'm a Web Developer</p>
@@ -59,24 +66,23 @@
             </div>
             <div class="cards">
                 <div class="card-one">
-                    <a href="#banner">
-                    <img src="imgs/portfolio.png" alt="A picture of a project">
+                    <a href="http://netmatters.jordan-hickling.netmatters-scs.co.uk/" target="_blank">
+                        <img src="imgs/netmatters-page.jpg" alt="A picture of a project">
                     <div class="project-information">
-                        <strong>My Portfolio</strong>
+                        <strong id="header-without-hover">Netmatters</strong>
+                        <strong id="header-whilst-hovering">HTML/CSS/JS</strong>
                         <br>
                         view project <span><i class="fa-solid fa-eye"></i></span>
                     </div>
                 </a>
                 </div>
-                <a href="http://netmatters.jordan-hickling.netmatters-scs.co.uk/" target="_blank">
                 <div class="card-two">
-                    <img src="imgs/netmatters-page.jpg" alt="A picture of a project">
+                    <img src="imgs/projects.png" alt="A picture of a project">
                     <div class="project-information">
                         <strong>Name Of Project</strong>
                         <br>
                         view project <span><i class="fa-solid fa-eye"></i></span>
                     </div>
-                </a>
                 </div>
                 <div class="card-three">
                     <img src="imgs/projects.png" alt="A picture of a project">
@@ -117,10 +123,13 @@
                     <div class="contact-text">
                         <h2>Get In Touch</h2>
                         <p>If you would like to know more about me, any projects I am working on or have any comments/questions on my work please contact below:</p>
-                        <span class="phone-span"><i class="phone fa-solid fa-phone"></i> 07565 646669</span>
+                        <span class="phone-span"><i class="phone fa-solid fa-phone"></i><a href="tel:07565 646669"> 07565 646669 </a></span>
                         <br>
-                        <span class="envelope-span"><i class="envelope fa-solid fa-envelope"></i> jordanhickling2000@gmail.com</span>
+                        <span class="envelope-span"><i class="envelope fa-solid fa-envelope"></i><a href="mailto:jordanhickling2000@gmail.com?subject=subject text">jordanhickling2000@gmail.com</a></span>
                         <p>Alternatively, you can contact me by completing the form.</p>
+                    </div>
+                    <div>
+                        <p id="success-popup">You have successfully sent the form!</p>
                     </div>
                         <div class="form" method="GET">
                             <div id="error"></div>
@@ -129,10 +138,16 @@
                                     <input type="text" id="fname" name="fname" placeholder="First Name:" >
                                     <input type="text" id="sname" name="sname" placeholder="Last Name:" >
                                 </div>
+                                <p id="warning-form-fname"><span><i class="form-cross fa-sharp fa-solid fa-circle-xmark"></i> Please put in your first name! </span></p>
+                                <p id="warning-form-lname"><span><i class="form-cross fa-sharp fa-solid fa-circle-xmark"></i> Please put in your last name! </span></p>
                                 <input type="email" id="email" name="email" value="" placeholder="Email:" >
+                                <p id="warning-form-email"><span><br><i class="form-cross fa-sharp fa-solid fa-circle-xmark"></i> Please put in your email! </span></p>
+                                <p id="warning-form-regex"><span><br><i class="form-cross fa-sharp fa-solid fa-circle-xmark"></i> Please make sure you are using the correct email! </span></p>
                                 <input type="text" id="subject" name="subject" placeholder="Subject:" >
+                                <p id="warning-form-subject"><span><br><i class="form-cross fa-sharp fa-solid fa-circle-xmark"></i> Please make sure you enter a subject! </span></p>
                                 <textarea type="text" id="message" name="message" placeholder="Message:" maxlength="480" ></textarea>
-                                <button class="submit-btn" type="submit" value="register">Submit</button>
+                                <p id="warning-form-message"><span><br><i class="form-cross fa-sharp fa-solid fa-circle-xmark"></i> Please put in a message! </span></p>
+                                <br><button class="submit-btn" type="submit" value="register">Submit</button>
                             </form>
                         </div>
                     </div>

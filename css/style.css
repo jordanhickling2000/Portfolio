@@ -45,7 +45,7 @@ nav li:hover {
 }
 
 .github {
-  color: purple;
+  color: black;
   font-size: 2.5vw;
   margin-right: 20px;
 }
@@ -54,7 +54,7 @@ nav li:hover {
 }
 
 .linkedin {
-  color: blue;
+  color: black;
   font-size: 2.5vw;
 }
 .linkedin:hover {
@@ -62,7 +62,7 @@ nav li:hover {
 }
 
 .sidebar-navigation {
-  height: 35%;
+  height: 460px;
   width: 0;
   position: fixed;
   z-index: 1;
@@ -94,9 +94,28 @@ nav li:hover {
   margin-top: 5px;
 }
 
+.sidebar-initials {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.sidebar-linkedin {
+  font-size: 40px;
+  padding: 10px;
+  margin-top: 5px;
+  color: black;
+}
+
+.sidebar-github {
+  font-size: 40px;
+  padding: 10px;
+  margin-top: 5px;
+  color: black;
+}
+
 #banner {
   position: relative;
-  background-image: url(../imgs/cover-img.jpg);
+  background-image: url(../imgs/cover-img2.jpg);
   background-size: cover;
   height: 100vh;
   overflow: hidden;
@@ -109,7 +128,7 @@ nav li:hover {
 }
 #banner h1 {
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
@@ -118,12 +137,14 @@ nav li:hover {
 }
 #banner p {
   position: absolute;
-  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  font-weight: 300;
   font-size: 4vw;
+  font-weight: bold;
+}
+#banner #p-typewriter {
+  top: 47%;
   font-weight: bold;
 }
 #banner span {
@@ -174,6 +195,9 @@ nav li:hover {
   }
   .card-six {
     max-width: 49%;
+  }
+  #warning-form-fname {
+    margin-right: 40px;
   }
 }
 @media (max-width: 767px) {
@@ -293,6 +317,9 @@ nav li:hover {
   }
   .hide {
     display: none;
+  }
+  #warning-form-fname {
+    margin-right: 40px;
   }
 }
 @media (min-width: 1200px) {
@@ -455,9 +482,10 @@ nav li:hover {
   }
 }
 .hamburger-btn {
-  height: 80px;
-  width: 80px;
-  font-size: 20px;
+  position: fixed;
+  z-index: 2;
+  height: 70px;
+  width: 70px;
   background-color: black;
   border: none;
 }
@@ -500,6 +528,10 @@ nav li:hover {
   font-size: 30px;
 }
 
+#header-whilst-hovering {
+  display: none;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -530,6 +562,12 @@ nav li:hover {
   transition-duration: 1s;
   background-color: black;
   color: white;
+}
+.card-one:hover #header-without-hover {
+  display: none;
+}
+.card-one:hover #header-whilst-hovering {
+  display: inline;
 }
 .card-one a {
   text-decoration: none;
@@ -621,6 +659,13 @@ nav li:hover {
   font-size: 20px;
   padding: 15px;
 }
+.get-in-touch a {
+  color: wheat;
+  font-size: 16px;
+}
+.get-in-touch a:hover {
+  text-decoration: underline;
+}
 .get-in-touch .phone {
   color: #a05dfc;
   padding-bottom: 10px;
@@ -656,7 +701,9 @@ nav li:hover {
   margin-right: 20px;
   background-color: #659DBD;
   border: 2px solid black;
-  font-size: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 10px;
 }
 
 #sname {
@@ -664,7 +711,9 @@ nav li:hover {
   height: 40px;
   background-color: #659DBD;
   border: 2px solid black;
-  font-size: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 10px;
 }
 
 #email {
@@ -673,7 +722,9 @@ nav li:hover {
   height: 40px;
   background-color: #659DBD;
   border: 2px solid black;
-  font-size: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 10px;
 }
 
 #subject {
@@ -682,7 +733,9 @@ nav li:hover {
   margin-top: 15px;
   background-color: #659DBD;
   border: 2px solid black;
-  font-size: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 10px;
 }
 
 #message {
@@ -691,7 +744,9 @@ nav li:hover {
   margin-top: 15px;
   background-color: #659DBD;
   border: 2px solid black;
-  font-size: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 10px;
 }
 
 .submit-btn {
@@ -713,6 +768,21 @@ nav li:hover {
 
 ::-webkit-input-placeholder {
   color: black;
+}
+
+#warning-form-fname, #warning-form-lname,
+#warning-form-email, #warning-form-regex,
+#warning-form-subject, #warning-form-message {
+  display: none;
+  color: red;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 2px;
+}
+
+.form-cross {
+  color: red;
+  font-size: 14px;
 }
 
 .about-me {
@@ -849,7 +919,7 @@ nav li:hover {
   padding: 10px;
 }
 .first-code img {
-  height: 30vh;
+  height: 40vh;
   margin-top: 30px;
   border: 2px solid red;
   border-radius: 10%;
@@ -1000,6 +1070,15 @@ th, td {
   margin-right: 5px;
   text-align: center;
   list-style-position: inside;
+}
+
+#success-popup {
+  display: none;
+  color: green;
+  top: 0;
+  width: 100vw;
+  height: 5vh;
+  font-size: 3vh;
 }
 
 * {

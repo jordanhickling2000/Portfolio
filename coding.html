@@ -2,10 +2,12 @@
 <html>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="https://kit.fontawesome.com/fc2f3a0d11.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <head>
         <title>Coding Examples</title>
+        <link rel="icon" type="image/png" href="imgs/favicons/favicon.ico">
     </head>
     <body>
         <nav>
@@ -16,7 +18,7 @@
                 <div>
                     <ul class="navigation">
                         <li><a href="about.html">About me</a></li>
-                        <li><a href="index.html">My Portfolio</a></li>
+                        <li><a href="index.html#card-link">My Portfolio</a></li>
                         <li><a href="coding.html">Coding Examples</a></li>
                         <li><a href="scs.html">SCS Software</a></li>
                         <li><a href="index.html#link">Contact Me</a></li>
@@ -25,16 +27,16 @@
                         <span><a href="https://github.com/JordanHicklingNetMatters" target="_blank"><i class="github fa-brands fa-github"></i></a></span>
                         <span><a href="https://www.linkedin.com/in/jordan-hickling-6567a9215/" target="_blank"><i class="linkedin fa-brands fa-linkedin"></i></a></span>  <!-- Social media Font Awsome logos. -->
                     </div>
-                    </div>
                 </div>
-            </div>
         </nav>
         <button class="hamburger-btn xs"><i class="hamburger-logo fa-solid fa-bars"></i></button>
         <div class="sidebar-navigation">
             <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+                <li><a href="index.html"><h1 class="sidebar-initials">JH</h1></a></li>
+                <div class="navigation-seperator"></div>
                 <li><a href="about.html">About me</a></li>
                 <div class="navigation-seperator"></div>
-                <li><a href="index.html">My Portfolio</a></li>
+                <li><a href="index.html#card-link">My Portfolio</a></li>
                 <div class="navigation-seperator"></div>
                 <li><a href="coding.html">Coding Examples</a></li>
                 <div class="navigation-seperator"></div>
@@ -42,6 +44,10 @@
                 <div class="navigation-seperator"></div>
                 <li><a href="index.html#link">Contact Me</a></li>
                 <div class="navigation-seperator"></div>
+                <div class="social-media">
+                    <span><a href="https://github.com/JordanHicklingNetMatters" target="_blank"><i class="sidebar-github fa-brands fa-github"></i></a></span>
+                    <span><a href="https://www.linkedin.com/in/jordan-hickling-6567a9215/" target="_blank"><i class="sidebar-linkedin fa-brands fa-linkedin"></i></a></span>  <!-- Social media Font Awsome logos. -->
+                </div><!-- Social media Font Awsome logos. -->
         </div>
         <div class="first-code">
             <h1 class="code-type"><u>Coding Examples</u></h1>
@@ -213,7 +219,7 @@
                      FROM employees
                      WHERE commission IS NOT NULL);"</p>
             <p>With this subquery the objective is to make the table only get the commissions that are not empty in the table. This means that the only 4 that should display are "ADELYN", "WADE", "MADDEN", "TUCKER". You could go further and use "AND" in the where clause and say "commission > 0". 
-                This would then kick out "TUCKER" and display just 4 names.</p>
+                This would then kick out "TUCKER" and display just 3 names.</p>
             <p>The Query SELECTS and shows only the employee ID (emp_id), the Employees Name (emp_name), the job name(job_name) and the commission from the employees table (what you see above)
             It then searches for the employee ID IN the subquery that is written afterwards that selects the emp_id which is what it will get following the where clause. The where clause searches for the
             commissions that have cells filled. "IS NOT NULL" means that it will return with cells that are not empty.</p>

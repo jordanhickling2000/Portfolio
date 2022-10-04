@@ -36,6 +36,9 @@
     .card-six {
         max-width: 49%;
     }
+    #warning-form-fname {
+        margin-right: 40px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -159,6 +162,9 @@
     }
     .hide {
         display: none;
+    }
+    #warning-form-fname {
+        margin-right: 40px;
     }
 }
 

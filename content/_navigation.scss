@@ -46,7 +46,7 @@ nav {
 }
  
 .github {
-    color: purple;
+    color: black;
     font-size: 2.5vw;
     margin-right: 20px;
     &:hover {
@@ -55,7 +55,7 @@ nav {
 }
 
 .linkedin {
-    color: blue;
+    color: black;
     font-size: 2.5vw;
     &:hover {
         cursor: pointer;
@@ -64,7 +64,7 @@ nav {
 
 // The side bar navigation (on click with Hamburger button)
 .sidebar-navigation {
-    height: 35%;
+    height: 460px;
     width: 0;
     position: fixed;
     z-index: 1;
@@ -94,4 +94,23 @@ nav {
         border: 1px solid white;
         margin-top: 5px;
     }
+}
+
+.sidebar-initials {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.sidebar-linkedin {
+    font-size: 40px;
+    padding: 10px;
+    margin-top: 5px;
+    color: black;
+}
+
+.sidebar-github {
+    font-size: 40px;
+    padding: 10px;
+    margin-top: 5px;
+    color: black;
 }

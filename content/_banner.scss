@@ -1,6 +1,6 @@
 #banner {
     position: relative;
-    background-image: url(../imgs/cover-img.jpg);
+    background-image: url(../imgs/cover-img2.jpg);
     background-size: cover;
     height: 100vh;
     overflow: hidden;
@@ -8,25 +8,28 @@
         text-align: center;
         margin: auto;
         width: 60%;
-        color: white
+        color: white;
     }
     h1 {
         position: absolute;
-        top: 40%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
         margin: 0;
         font-weight: bold;
         font-size: 6vw;
+        // background-color: black;
     }
     p {
         position: absolute;
-        top:55%;
         left: 50%;
         transform: translate(-50%, -50%);
         margin: 0;
-        font-weight: 300;
         font-size: 4vw;
+        font-weight: bold;
+    }
+    #p-typewriter {
+        top: 47%;
         font-weight: bold;
     }
     span {

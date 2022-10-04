@@ -5,6 +5,10 @@
     }
 }
 
+#header-whilst-hovering {
+    display: none;
+}
+
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -33,6 +37,12 @@
         transition-duration: 1s;
         background-color: black;
         color: white;
+        #header-without-hover {
+            display: none;
+        }
+        #header-whilst-hovering {
+            display: inline;
+        }
     }
     a {
         text-decoration: none;

@@ -15,7 +15,9 @@
     margin-right: 20px;
     background-color: #659DBD;
     border: 2px solid black;
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 10px;
 }
 
 #sname {
@@ -23,7 +25,9 @@
     height: 40px;
     background-color: #659DBD;
     border: 2px solid black;
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 10px;
 }
 
 #email {
@@ -32,7 +36,9 @@
     height: 40px;
     background-color: #659DBD;
     border: 2px solid black;
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 10px;
 }
 
 #subject {
@@ -41,7 +47,9 @@
     margin-top: 15px;
     background-color: #659DBD;
     border: 2px solid black;
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 10px;
 }
 
 #message {
@@ -50,7 +58,9 @@
     margin-top: 15px;
     background-color: #659DBD;
     border: 2px solid black;
-    font-size: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 10px;
 }
 
 
@@ -75,4 +85,19 @@
 
 ::-webkit-input-placeholder {
     color: black;
+}
+
+#warning-form-fname, #warning-form-lname,
+#warning-form-email, #warning-form-regex,
+#warning-form-subject, #warning-form-message  {
+    display: none;
+    color: red;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 2px;
+}
+
+.form-cross {
+    color: red;
+    font-size: 14px;
 }
