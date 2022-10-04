@@ -29,6 +29,7 @@
     border: none;
     color: white;
     background-color: transparent;
+    z-index: 2;
     .closing-cross {
         color: white;
     }
@@ -46,6 +47,8 @@
     width: 3vh;
     font-size: 2.5vh;
     background-color: black;
+    border-color: black;
+    border: none;
     cursor: pointer;
     right: 0;
     margin-right: 20px;

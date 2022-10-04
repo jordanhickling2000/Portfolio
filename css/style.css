@@ -65,7 +65,7 @@ nav li:hover {
   height: 460px;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   top: 0;
   background-image: linear-gradient(to right, #76ace3, #3b94ed, #187bde);
   overflow: hidden;
@@ -512,6 +512,7 @@ nav li:hover {
   border: none;
   color: white;
   background-color: transparent;
+  z-index: 2;
 }
 .close-btn .closing-cross {
   color: white;
@@ -529,6 +530,8 @@ nav li:hover {
   width: 3vh;
   font-size: 2.5vh;
   background-color: black;
+  border-color: black;
+  border: none;
   cursor: pointer;
   right: 0;
   margin-right: 20px;
@@ -1088,7 +1091,7 @@ th, td {
 #success-popup {
   display: none;
   color: green;
-  font-size: 3vh;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -1096,11 +1099,12 @@ th, td {
   display: none;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   height: 5vh;
   background-color: black;
   text-align: center;
   padding-top: 5px;
+  border: 2px solid green;
 }
 
 * {

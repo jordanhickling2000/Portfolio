@@ -128,6 +128,7 @@ form.addEventListener('submit', (e) => {
         document.getElementById("success-popup").style.display="inline";
         document.getElementById("popup-container").style.display="inline";
         document.getElementById("close-popup-button").style.display="inline";
+        document.querySelector('.hamburger-btn').style.marginTop = "45px";
     }
 })
 
@@ -138,8 +139,8 @@ closePopup.addEventListener('click', closeSuccessPopup)
         document.getElementById("success-popup").style.display="none";
         document.getElementById("popup-container").style.display="none";
         document.getElementById("close-popup-button").style.display="none";
-}
-
+        document.querySelector('.hamburger-btn').style.marginTop = "0";
+    }
 // ================================================================== 
 //
 //                 Test code for Regex
