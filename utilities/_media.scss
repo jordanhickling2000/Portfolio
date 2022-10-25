@@ -172,6 +172,9 @@
     #warning-form-fname {
         margin-right: 40px;
     }
+}
+
+@media (min-width: 1078px) {
     #small-screen-warning {
         display: none;
     }
@@ -267,6 +270,7 @@
         margin-top: 0;
     }
 }
+
 
 @media (min-width: 1500px) {
     nav {
