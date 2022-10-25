@@ -204,6 +204,11 @@ nav li:hover {
   nav {
     display: none;
   }
+  .first-code img {
+    width: 90vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 @media (min-width: 768px) {
   #banner h1 {
@@ -321,6 +326,9 @@ nav li:hover {
   #warning-form-fname {
     margin-right: 40px;
   }
+  #small-screen-warning {
+    display: none;
+  }
 }
 @media (min-width: 1200px) {
   nav {
@@ -402,6 +410,15 @@ nav li:hover {
     width: 100%;
   }
 }
+@media (max-width: 1500px) {
+  .flex-container-coding-page {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .text-coding-container {
+    margin-top: 0;
+  }
+}
 @media (min-width: 1500px) {
   nav {
     max-width: 12%;
@@ -479,6 +496,9 @@ nav li:hover {
     margin-left: 10px;
     width: 40%;
     height: 100%;
+  }
+  .text-coding-container {
+    margin-top: 10%;
   }
 }
 .hamburger-btn {
@@ -760,7 +780,7 @@ nav li:hover {
   margin-top: 15px;
   background-color: #659DBD;
   border: 2px solid black;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   padding-left: 10px;
 }
@@ -930,18 +950,26 @@ nav li:hover {
   text-align: center;
 }
 
+.flex-container-coding-page {
+  display: flex;
+}
+
 .first-code {
   text-align: center;
   padding: 10px;
 }
 .first-code img {
-  height: 40vh;
+  height: 50vh;
   margin-top: 30px;
   border: 2px solid red;
   border-radius: 10%;
+  margin-right: 20px;
+  margin-left: 3%;
 }
 .first-code p {
   font-weight: 600;
+  font-size: 20px;
+  padding-right: 20px;
 }
 
 table {
@@ -966,11 +994,32 @@ th, td {
 
 .second-code {
   text-align: center;
+  padding-top: 20px;
 }
 .second-code p {
   padding-left: 50px;
   padding-right: 50px;
   font-weight: bold;
+}
+
+.seperator-line {
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+#table-container {
+  overflow: auto;
+  margin-left: 30px;
+}
+
+#small-screen-warning {
+  color: red;
 }
 
 #scs-heading {

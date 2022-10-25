@@ -45,6 +45,12 @@
     nav {
         display: none;
     }
+    .first-code {
+        img{
+            width: 90vw;
+            object-fit: cover;
+        }
+    }
 }
 
 @media (min-width: 768px) {
@@ -166,6 +172,9 @@
     #warning-form-fname {
         margin-right: 40px;
     }
+    #small-screen-warning {
+        display: none;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -249,6 +258,16 @@
     }
 }
 
+@media (max-width: 1500px) {
+    .flex-container-coding-page {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .text-coding-container {
+        margin-top: 0;
+    }
+}
+
 @media (min-width: 1500px) {
     nav {
         max-width: 12%;
@@ -326,5 +345,8 @@
         margin-left: 10px;
         width: 40%;
         height: 100%;
+    }
+    .text-coding-container {
+        margin-top: 10%;
     }
 }
