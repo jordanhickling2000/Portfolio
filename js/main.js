@@ -28,3 +28,4 @@ closeButton.addEventListener("click", closeNav)
 function closeNav(){
     document.getElementsByClassName("sidebar-navigation")[0].style.width = "0";
 }
+

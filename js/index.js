@@ -56,8 +56,8 @@ const form = document.querySelector('.form');
 
 
 form.addEventListener('submit', (e) => {
-        e.preventDefault();
     if (fname.value === "" || fname.value == null) {
+        e.preventDefault();
         document.getElementById("fname").style.borderColor = "red";
         document.getElementById("warning-form-fname").style.display="inline"
         // alert("First name is required");
@@ -68,8 +68,8 @@ form.addEventListener('submit', (e) => {
   }) 
 
   form.addEventListener('submit', (e) => {
-        e.preventDefault();
     if (sname.value === "" || sname.value == null) {
+        e.preventDefault();
         document.getElementById("sname").style.borderColor = "red";
         document.getElementById("warning-form-sname").style.display="inline"
         // alert("Last name is required")
@@ -83,6 +83,7 @@ const regex = /(^(?!.*__.*)[a-z0-9]{4,253}(_?)[a-z0-9]+(?:\.[a-z0-9!#$%&*+\/=?^`
 
 form.addEventListener('submit', (e) =>{
 if (email.value === "" || email.value == null) { 
+    e.preventDefault();
     document.getElementById("email").style.borderColor = "red";
     document.getElementById("warning-form-email").style.display="inline"
     // alert("Email is required");
@@ -100,8 +101,8 @@ if (email.value === "" || email.value == null) {
 
 
 form.addEventListener('submit', (e) => {
-    e.preventDefault();
     if (subject.value === "" || subject.value == null) {
+        e.preventDefault();
         document.getElementById("subject").style.borderColor = "red";
         document.getElementById("warning-form-subject").style.display="inline";
         // alert("Subject is required"); 
@@ -112,8 +113,8 @@ form.addEventListener('submit', (e) => {
 }) 
 
 form.addEventListener('submit', (e) => {
-    e.preventDefault();
     if (message.value === "" || message.value == null) {
+        e.preventDefault();
         document.getElementById("message").style.borderColor = "red";
         document.getElementById("warning-form-message").style.display="inline";
         // alert("A message is required");

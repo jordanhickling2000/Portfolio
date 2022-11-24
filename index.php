@@ -1,11 +1,14 @@
+<?php 
+    include_once 'inc/dbh.php';
+?>
+
 <!DOCTYPE html>
-<html>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="https://kit.fontawesome.com/fc2f3a0d11.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
         <title>Portfolio</title>
         <link rel="icon" type="image/png" href="imgs/favicons/favicon.ico">
     </head>
@@ -132,29 +135,36 @@
                         <span class="envelope-span"><i class="envelope fa-solid fa-envelope"></i><a href="mailto:jordanhickling2000@gmail.com?subject=subject text">jordanhickling2000@gmail.com</a></span>
                         <p>Alternatively, you can contact me by completing the form.</p>
                     </div>
-                        <div class="form" method="GET">
-                            <div id="error"></div>
-                            <form>
+                        <div class="form">
+                            <form id="contact-form" action="inc/contactForm.php" method="POST">
                                 <div class="name">
                                     <input type="text" id="fname" name="fname" placeholder="First Name:" >
                                     <input type="text" id="sname" name="sname" placeholder="Last Name:" >
                                 </div>
                                 <p id="warning-form-fname"><span><i class="form-cross fa-sharp fa-solid fa-circle-xmark"></i> Please put in your first name! </span></p>
                                 <p id="warning-form-sname"><span><i class="form-cross fa-sharp fa-solid fa-circle-xmark"></i> Please put in your last name! </span></p>
-                                <input type="email" id="email" name="email" value="" placeholder="Email:" >
+
+
+                                <input type="email" id="email" name="email" placeholder="Email:" >
                                 <p id="warning-form-email"><span><br><i class="form-cross fa-sharp fa-solid fa-circle-xmark"></i> Please put in your email! </span></p>
                                 <p id="warning-form-regex"><span><br><i class="form-cross fa-sharp fa-solid fa-circle-xmark"></i> Please make sure you are using the correct email! </span></p>
+                                
+                                
+                                
                                 <input type="text" id="subject" name="subject" placeholder="Subject:" >
                                 <p id="warning-form-subject"><span><br><i class="form-cross fa-sharp fa-solid fa-circle-xmark"></i> Please make sure you enter a subject! </span></p>
-                                <textarea type="text" id="message" name="message" placeholder="Message:" maxlength="480" ></textarea>
+
+                                
+                                <textarea type="text" id="message" name="message" placeholder="Message:"></textarea>
                                 <p id="warning-form-message"><span><br><i class="form-cross fa-sharp fa-solid fa-circle-xmark"></i> Please put in a message! </span></p>
-                                <br><button class="submit-btn" type="submit" value="register">Submit</button>
+                                <br><button class="submit-btn" type="submit" name="submit">Submit</button>
                             </form>
                         </div>
                     </div>
                 </div>
                 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+                <script src="https://kit.fontawesome.com/fc2f3a0d11.js" crossorigin="anonymous"></script>
+                <script src="js/index.js"></script> 
                 <script src="js/main.js"></script>
-                <script src="js/index.js"></script>
             </body>
         </html>
