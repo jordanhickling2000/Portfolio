@@ -87,14 +87,17 @@ if (email.value === "" || email.value == null) {
     document.getElementById("email").style.borderColor = "red";
     document.getElementById("warning-form-email").style.display="inline"
     // alert("Email is required");
-} else if (email.value.match(regex)) {
+} 
+
+if (!email.value.match(regex)) {
+    e.preventDefault();
+    document.getElementById("warning-form-email").style.display="none"
+    document.getElementById("email").style.borderColor = "red";
+    document.getElementById("warning-form-regex").style.display="inline";
+} else {
     document.getElementById("email").style.borderColor = "green";
     document.getElementById("warning-form-email").style.display="none"
     document.getElementById("warning-form-regex").style.display="none"
-} else {
-    document.getElementById("warning-form-email").style.display="none"
-    document.getElementById("email").style.borderColor = "red";
-    document.getElementById("warning-form-regex").style.display="inline"
     // alert("This is an invalid Email Address! Please enter another or check it over.")
 }
 });
@@ -124,14 +127,24 @@ form.addEventListener('submit', (e) => {
     }
 }) 
 
+
 form.addEventListener('submit', (e) => {
     if(fname.style.borderColor === "green" && sname.style.borderColor === "green" && email.style.borderColor === "green" && subject.style.borderColor === "green" && message.style.borderColor === "green") {
         document.getElementById("success-popup").style.display="inline";
         document.getElementById("popup-container").style.display="inline";
         document.getElementById("close-popup-button").style.display="inline";
         document.querySelector('.hamburger-btn').style.marginTop = "45px";
-    }
-})
+        }
+    })
+
+form.addEventListener('submit', (e) => {
+    if(fname.style.borderColor === "red" || sname.style.borderColor === "red" || email.style.borderColor === "red" || subject.style.borderColor === "red" || message.style.borderColor === "red") {
+        document.getElementById("error-popup").style.display="inline";
+        document.getElementById("error-popup-container").style.display="inline";
+        document.getElementById("close-popup-button").style.display="inline";
+        document.querySelector('.hamburger-btn').style.marginTop = "45px";
+        }
+    })
 
 const closePopup = document.querySelector('#close-popup-button');
 

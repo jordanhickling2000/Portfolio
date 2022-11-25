@@ -8,6 +8,7 @@ nav {
   overflow: hidden;
   font-weight: bold;
   font-size: 20px;
+  z-index: 999;
 }
 nav .intials {
   text-align: center;
@@ -1145,6 +1146,25 @@ th, td {
   color: green;
   font-size: 25px;
   font-weight: bold;
+}
+
+#error-popup {
+  display: none;
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#error-popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 5vh;
+  background-color: black;
+  text-align: center;
+  padding-top: 5px;
+  border: 2px solid red;
 }
 
 #popup-container {

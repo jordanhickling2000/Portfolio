@@ -1,11 +1,14 @@
 <?php
     include_once 'dbh.php';
 
-    $fname = $_POST['fname'];
-    $sname = $_POST['sname'];
-    $email = $_POST['email'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
+    $fname = input_cleaner($_POST['fname']);
+    $sname = input_cleaner($_POST['sname']);
+    $email = input_cleaner($_POST['email']);
+    $subject = input_cleaner($_POST['subject']);
+    $message = input_cleaner($_POST['message']);
+
+
+    // $cleanEmail = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
 
     try {
         $conn = new PDO("mysql:host=$dbServername;dbname=$dbName", $dbUsername, $dbPassword);
@@ -17,8 +20,22 @@
         $stmt->bindParam(':subject', $subject);
         $stmt->bindParam(':message', $message);
         $stmt->execute();
-    var_dump($_POST);
-    header("Location: ../index.php?contact=success");
+        header("Location: ../index.php");
     } catch (Exception $e) {
         echo "Error Connecting To Database";
 }
+
+    // function input_cleaner($input) {
+    //     $input = trim($input);
+    //     $input = stripslashes($input);
+    //     $input = htmlspecialchars($input);
+    //     return $input;
+    // }
+
+    function input_cleaner($input) {
+        $input = trim($input);
+        $input = stripslashes($input);
+        $input = htmlspecialchars($input);
+        return preg_replace("/&#?[a-z0-9]+;/i","", $input); // Removes special chars.
+     }
+

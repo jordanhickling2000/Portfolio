@@ -125,6 +125,10 @@
             <p id="success-popup">You have successfully sent the form!</p>
             <button id="close-popup-button" type="button">x</button>
         </div>
+        <div id="error-popup-container">
+            <p id="error-popup">Please check form information again!</p>
+            <button id="close-popup-button" type="button">x</button>
+        </div>
             <div class="get-in-touch">
                 <div id="link"></div>
                     <div class="contact-text">
