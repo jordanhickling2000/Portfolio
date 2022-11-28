@@ -2,9 +2,14 @@
 
 $dbServername = "localhost";
 $dbUsername = "jordanhi_admin";
-$dbPassword = "vmpSB#9DA4Tw";
+$dbPassword = "W2WHbDW_%=rE";
 $dbName = "jordanhi_portfolio";
 
-$conn = new PDO("mysql:host=$dbServername;dbname=$dbName", $dbUsername, $dbPassword);
-$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+try {
+    $conn = new PDO("mysql:host=$dbServername;dbname=$dbName", $dbUsername, $dbPassword);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    echo "Connection failed" . $e->getMessage();
+}
 

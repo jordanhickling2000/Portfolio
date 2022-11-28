@@ -130,6 +130,10 @@
             <button id="close-popup-button" type="button">x</button>
         </div>
             <div class="get-in-touch">
+            <?php 
+            include 'inc/contactForm.php';
+            // var_dump($_POST);
+        ?>
                 <div id="link"></div>
                     <div class="contact-text">
                         <h2>Get In Touch</h2>
@@ -140,7 +144,7 @@
                         <p>Alternatively, you can contact me by completing the form.</p>
                     </div>
                         <div class="form">
-                            <form id="contact-form" action="inc/contactForm.php" method="POST">
+                            <form id="contact-form" action="index.php" method="POST">
                                 <div class="name">
                                     <input type="text" id="fname" name="fname" placeholder="First Name:" >
                                     <input type="text" id="sname" name="sname" placeholder="Last Name:" >
