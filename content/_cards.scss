@@ -5,7 +5,7 @@
     }
 }
 
-#header-whilst-hovering {
+.header-whilst-hovering {
     display: none;
 }
 
@@ -37,10 +37,10 @@
         transition-duration: 1s;
         background-color: black;
         color: white;
-        #header-without-hover {
+        .header-without-hover {
             display: none;
         }
-        #header-whilst-hovering {
+        .header-whilst-hovering {
             display: inline;
         }
     }
@@ -64,6 +64,12 @@
         transition-duration: 1s;
         background-color: black;
         color: white;
+        .header-without-hover {
+            display: none;
+        }
+        .header-whilst-hovering {
+            display: inline;
+        }
     }
     a {
         text-decoration: none;

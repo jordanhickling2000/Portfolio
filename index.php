@@ -63,30 +63,37 @@
                     </span></a>
                 </div>
             </div> <!-- This is the end of the banner section -->
+
         <div class="container">
             <div class="project-heading">
                 <h2 id="card-link">My Projects</h2>
             </div>
+
             <div class="cards">
                 <div class="card-one">
                     <a href="http://netmatters.jordan-hickling.netmatters-scs.co.uk/" target="_blank">
-                        <img src="imgs/netmatters-page.jpg" alt="A picture of a project">
-                    <div class="project-information">
-                        <strong id="header-without-hover">Netmatters</strong>
-                        <strong id="header-whilst-hovering">HTML/CSS/JS</strong>
-                        <br>
-                        view project <span><i class="fa-solid fa-eye"></i></span>
-                    </div>
-                </a>
+                        <img src="imgs/netmatters-page.jpg" alt="Screenshot of my Netmatters page">
+                        <div class="project-information">
+                            <strong class="header-without-hover">Netmatters</strong>
+                            <strong class="header-whilst-hovering">HTML/CSS/JS</strong>
+                            <br>
+                            view project <span><i class="fa-solid fa-eye"></i></span>
+                        </div>
+                    </a>
                 </div>
+
                 <div class="card-two">
-                    <img src="imgs/projects.png" alt="A picture of a project">
-                    <div class="project-information">
-                        <strong>Name Of Project</strong>
-                        <br>
-                        view project <span><i class="fa-solid fa-eye"></i></span>
-                    </div>
+                    <a href="http://jsarray.jordan-hickling.netmatters-scs.co.uk/" traget="_blank">
+                        <img src="imgs/jsarray.jpg" alt="Screenshot of my image sender website">
+                        <div class="project-information">
+                            <strong class="header-without-hover">IMG Sender</strong>
+                            <strong class="header-whilst-hovering">HTML/CSS/JS</strong>
+                            <br>
+                            view project <span><i class="fa-solid fa-eye"></i></span>
+                        </div>
+                    </a>
                 </div>
+
                 <div class="card-three">
                     <img src="imgs/projects.png" alt="A picture of a project">
                     <div class="project-information">
@@ -95,6 +102,7 @@
                         view project <span><i class="fa-solid fa-eye"></i></span>
                     </div>
                 </div>
+
                 <div class="card-four">
                     <img src="imgs/projects.png" alt="A picture of a project">
                     <div class="project-information">
@@ -103,6 +111,7 @@
                         view project <span><i class="fa-solid fa-eye"></i></span>
                     </div>
                 </div>
+
                 <div class="card-five">
                     <img src="imgs/projects.png" alt="A picture of a project">
                     <div class="project-information">
@@ -111,6 +120,7 @@
                         view project <span><i class="fa-solid fa-eye"></i></span>
                     </div>
                 </div>
+
                 <div class="card-six">
                     <img src="imgs/projects.png" alt="A picture of a project">
                     <div class="project-information">

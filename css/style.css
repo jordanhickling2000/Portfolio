@@ -567,7 +567,7 @@ nav li:hover {
   font-size: 30px;
 }
 
-#header-whilst-hovering {
+.header-whilst-hovering {
   display: none;
 }
 
@@ -602,10 +602,10 @@ nav li:hover {
   background-color: black;
   color: white;
 }
-.card-one:hover #header-without-hover {
+.card-one:hover .header-without-hover {
   display: none;
 }
-.card-one:hover #header-whilst-hovering {
+.card-one:hover .header-whilst-hovering {
   display: inline;
 }
 .card-one a {
@@ -628,6 +628,12 @@ nav li:hover {
   transition-duration: 1s;
   background-color: black;
   color: white;
+}
+.card-two:hover .header-without-hover {
+  display: none;
+}
+.card-two:hover .header-whilst-hovering {
+  display: inline;
 }
 .card-two a {
   text-decoration: none;
@@ -1217,24 +1223,13 @@ ul {
 #typewriter::after {
   content: "";
   margin-left: 5px;
-  -webkit-animation: blink 0.7s;
-          animation: blink 0.7s;
+  animation: blink 0.7s;
 }
 
 #p-typewriter::after {
   content: "";
   margin-left: 3px;
-  -webkit-animation: blink 0.7s;
-          animation: blink 0.7s;
-}
-
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+  animation: blink 0.7s;
 }
 
 @keyframes blink {
