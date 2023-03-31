@@ -15,7 +15,7 @@
     <body>
         <nav>
             <div class="main-nav">
-                <a href="index.html"><h1 class="intials">JH</h1>
+                <a href="http://localhost/portfolio/index.php"><h1 class="intials">JH</h1>
                 <div class="border-line">
                 </div>
                 <div>
@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div class="social-media">
-                <span><a href="https://github.com/JordanHicklingNetMatters" target="_blank"><i class="github fa-brands fa-github"></i></a></span>
+                <span><a href="https://github.com/jordanhickling2000" target="_blank"><i class="github fa-brands fa-github"></i></a></span>
                 <span><a href="https://www.linkedin.com/in/jordan-hickling-6567a9215/" target="_blank"><i class="linkedin fa-brands fa-linkedin"></i></a></span>  <!-- Social media Font Awsome logos. -->
             </div>
         </nav>  
@@ -78,6 +78,10 @@
                             <strong class="header-whilst-hovering">HTML/CSS/JS</strong>
                             <br>
                             view project <span><i class="fa-solid fa-eye"></i></span>
+                            <br>
+                            <p class="project-description">For this project I started the project looking at the Netmatters website
+                                which is what this project is mimicking this uses HTML, CSS with Sass using mixins and some JavaScript.
+                                This project was a little less freeing then others due to the template however I think it looks pretty good. There are some minor issues.</p>
                         </div>
                     </a>
                 </div>
@@ -90,20 +94,31 @@
                             <strong class="header-whilst-hovering">HTML/CSS/JS</strong>
                             <br>
                             view project <span><i class="fa-solid fa-eye"></i></span>
+                            <br>
+                            <p class="project-description">For this project I started off trying to figure out how to make a fetch api to grab
+                                the intial images that I needed and how to input them into the array. For this website a lot of JavaScript was used
+                                not focusing heavily on the HTML however after doing the JavaScript I went back and made it look a little better.</p>
                         </div>
                     </a>
                 </div>
 
                 <div class="card-three">
-                    <img src="imgs/projects.png" alt="A picture of a project">
-                    <div class="project-information">
-                        <strong>Name Of Project</strong>
-                        <br>
-                        view project <span><i class="fa-solid fa-eye"></i></span>
-                    </div>
+                    <a href="https://wordpress.jordan-hickling.netmatters-scs.co.uk/" target="_blank">
+                        <img src="imgs/picturesforyou.jpg" alt="A picture of my WordPress Project">
+                        <div class="project-information">
+                            <strong class="header-without-hover">Pictures For You</strong>
+                            <strong class="header-whilst-hovering">Front End WordPress</strong>
+                            <br>
+                            view project <span><i class="fa-solid fa-eye"></i></span>
+                            <br>
+                            <p class="project-description">This project was very refreshing and enjoyable because it was a lot more about the design
+                                whilst working out this new language that I just picked up. This was mainly making a child theme in CSS using the astra template
+                                and using the WordPress dashboard to position the elements the way I intended.</p>
+                        </div>
+                    </a>
                 </div>
 
-                <div class="card-four">
+                <!-- <div class="card-four">
                     <img src="imgs/projects.png" alt="A picture of a project">
                     <div class="project-information">
                         <strong>Name Of Project</strong>
@@ -128,7 +143,7 @@
                         <br>
                         view project <span><i class="fa-solid fa-eye"></i></span>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div id="popup-container">
@@ -183,6 +198,6 @@
                 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
                 <script src="https://kit.fontawesome.com/fc2f3a0d11.js" crossorigin="anonymous"></script>
                 <script src="js/index.js"></script> 
-                <script src="js/main.js"></script>
+                <script src="js/portfolio-main.js"></script>
             </body>
         </html>

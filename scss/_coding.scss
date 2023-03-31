@@ -1,5 +1,9 @@
-.code-type {
+.code-header {
     text-align: center;
+}
+
+.code-type {
+    margin-top: 0;
 }
 
 .flex-container-coding-page {
@@ -9,11 +13,12 @@
 .first-code {
     text-align: center;
     padding: 10px;
+    background-color: #00A2F1;
+    border-bottom: 2px solid #F9F871;
     img {
         height: 50vh;
-        margin-top: 30px;
-        border: 2px solid red;
-        border-radius: 10%;
+        margin-top: 10px;
+        margin-bottom: 10px;
         margin-right: 20px;
         margin-left: 3%;
     }
@@ -30,7 +35,11 @@ table {
 }
 
 #bottom-table {
-    margin-bottom: 20px;
+    overflow: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-left: 3%;
 }
 
 table, th, td {
@@ -47,17 +56,14 @@ table, th, td {
 .second-code {
     text-align: center;
     padding-top: 20px;
+    background-color: #00A2F1;
+    border-bottom: 2px solid #F9F871;
     p {
-        padding-left: 50px;
-        padding-right: 50px;
-        font-weight: bold;
+        font-weight: 600;
+        font-size: 20px;
+        padding-right: 20px;
+        width: 400px;
     }
-}
-
-.seperator-line {
-    width: 100%;
-    margin-top: 20px;
-    border: 1px solid black;
 }
 
 th, td {
@@ -67,10 +73,95 @@ th, td {
   
 #table-container {
     overflow: auto;
-    margin-left: 30px;
-    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-left: 3%;
 }
 
 #small-screen-warning {
     color: red;
+}
+
+.outcome-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.third-code {
+    text-align: center;
+    padding: 10px;
+    background-color: #00A2F1;
+    border-bottom: 2px solid #F9F871;
+    img {
+        height: 50vh;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 20px;
+        margin-left: 3%;
+    }
+    p {
+        font-weight: 600;
+        font-size: 20px;
+        padding-right: 20px;
+    }
+    .third-container {
+        margin-top: 0;
+    }
+}
+
+.fourth-code {
+    text-align: center;
+    padding: 10px;
+    background-color: #00A2F1;
+    border-bottom: 2px solid #F9F871;
+    img {
+        height: 50vh;
+    }
+    p {
+        font-weight: 600;
+        font-size: 20px;
+        padding-right: 20px;
+    }
+    .text-coding-container {
+        margin-top: 0;
+    }
+}
+
+.img-container {
+    justify-content: center;
+    gap: 2%
+}
+
+.figcaption-no-flex {
+    position: absolute
+}
+
+.hide-on-big-screen {
+    display: none;
+}
+
+.hide-on-small-screen {
+    display: none;
+}
+
+.wordpress-explained {
+    gap: 2%;
+    justify-content: center;
+    p {
+        width: 650px;
+    }
+}
+
+#param-link {
+    text-decoration: none;
+    color: black;
+    &:hover {
+        text-decoration: underline;
+        color: white;
+        transition: 0.5s;
+    }
 }

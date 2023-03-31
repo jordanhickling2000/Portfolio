@@ -9,15 +9,10 @@ function input_cleaner($input) {
 
 
     $fname = input_cleaner($_POST['fname']);
-    // echo var_dump($fname);
     $sname = input_cleaner($_POST['sname']);
     $email = input_cleaner($_POST['email']);
-    // echo var_dump($email);
     $subject = input_cleaner($_POST['subject']);
     $message = input_cleaner($_POST['message']);
-
-
-    // $cleanEmail = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
 
     try {
         // echo var_dump("test1");

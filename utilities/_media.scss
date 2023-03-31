@@ -45,7 +45,7 @@
     nav {
         display: none;
     }
-    .first-code {
+    .first-code, .fourth-code {
         img{
             width: 90vw;
             object-fit: cover;
@@ -81,10 +81,7 @@
     #coding-header {
         margin-left: 25%;
     }
-    .first-code {
-        margin-left: 25%;
-    }
-    .second-code {
+    .first-code, .second-code, .third-code, .fourth-code {
         margin-left: 25%;
     }
     .about-me {
@@ -134,6 +131,18 @@
     }
 }
 
+@media (max-width: 930px) {
+    .first-code img {
+        height: 40vh !important;
+    }
+    .fourth-code img {
+        height: 40vh !important;
+    }
+    .third-code img {
+        height: 40vh !important;
+    }
+}
+
 @media (min-width: 992px) {
     #banner {
         height: 100vh;
@@ -180,6 +189,7 @@
     }
 }
 
+
 @media (min-width: 1200px) {
     nav {
         max-width: 16%;
@@ -199,10 +209,7 @@
     #coding-header {
         margin-left: 16%;
     }
-    .first-code {
-        margin-left: 16%;
-    }
-    .second-code {
+    .first-code, .second-code, .third-code, .fourth-code {
         margin-left: 16%;
     }
     .about-me {
@@ -259,6 +266,34 @@
         padding-top: 20px;
         width: 100%;
     }
+    .text-wrap {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .outcome-text {
+        width: 400px !important;
+    }
+}
+
+@media (max-width: 1281px) {
+    .hide-on-big-screen {
+        display: block !important;
+    }
+}
+
+@media (min-width: 1282px) {
+    .fourth-code img {
+        margin-bottom: 10px;
+    }
+    .hide-on-small-screen {
+        display: block !important;
+    }
+}
+
+@media (max-width: 1433px) {
+    .outcome-text {
+        width: 700px !important;
+    }
 }
 
 @media (max-width: 1500px) {
@@ -268,6 +303,9 @@
     }
     .text-coding-container {
         margin-top: 0;
+    }
+    #bottom-table {
+        width: 60%;
     }
 }
 
@@ -288,10 +326,7 @@
     #coding-header {
         margin-left: 10%;
     }
-    .first-code {
-        margin-left: 10%;
-    }
-    .second-code {
+    .first-code, .second-code, .third-code, .fourth-code {
         margin-left: 10%;
     }
     .about-me-content {
@@ -351,6 +386,20 @@
         height: 100%;
     }
     .text-coding-container {
-        margin-top: 10%;
+        margin-top: 5%;
+        margin-left: 90px;
+    }
+    .text-wrap {
+        display: flex;
+        flex-direction: column !important;
+    }
+    #bottom-table {
+        margin-left: 7% !important;
+    }
+    .outcome-text {
+        margin-left: 90px;  
+    }
+    .largest-screen-size-change {
+        margin-left: 7%;
     }
 }

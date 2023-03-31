@@ -1,9 +1,9 @@
 <?php 
 
 $dbServername = "localhost";
-$dbUsername = "jordanhi_admin";
-$dbPassword = "W2WHbDW_%=rE";
-$dbName = "jordanhi_portfolio";
+$dbUsername = "root";
+$dbPassword = "";
+$dbName = "portfolio";
 
 
 try {
